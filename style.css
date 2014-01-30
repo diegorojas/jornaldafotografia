@@ -2605,6 +2605,139 @@ h3.archive_year {
   -webkit-box-shadow: 0 1px 0.334em 0px rgba(0, 0, 0, 0.2);
 }
 /* 6.4 Sitemap */
+
+/* 6.5 Page Template Home */
+
+.clear{
+	width: 100%;
+	height: 1px;
+	clear: both;
+}
+
+#main-home {
+	max-width: 100%;
+}
+
+#main-home .cada-post-home {
+	width: 28%;
+	height: 400px;
+	margin: 0 25px 25px 0;
+	float: left;
+	background: #FFF;
+	padding: 10px;
+}
+
+#main-home .cada-post-home h3 {
+	font-size: 1.2em;
+	margin: 10px 0;
+	font-family: 'Bitter', serif;
+}
+
+.cada-post-home .thumb {
+	width: 100%;
+	max-height: 220px;
+}
+
+.comments-post {
+	width: 15%;
+	height: 30px;
+	float: left;
+	background: #c1c1c1;
+	padding: 0 0 0 30px;
+}
+
+.categories-post {
+	width: 60%;
+	height: 30px;
+	float: left;
+}
+
+.categories-post ul {
+	margin: 0;
+	padding: 0;
+}
+
+.categories-post a {
+	font-size: 0.8em;
+	font-family: 'Bitter', serif;
+	color: #b9d62c;
+	text-decoration: none;
+}
+
+.seta-post {
+	float: right;
+	position: relative;
+	width: 13%;
+	height: 30px;
+	background: #CCC;
+}
+
+.seta-post a {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+}
+
+.excerpt-home {
+	padding: 10px;
+	width: 28%;
+	height: 400px;
+	background: #FFF;
+	float: left;
+}
+
+.excerpt-home-content {
+	background: #eeedcf;
+	width: 90%;
+	margin: 0 25px 25px 0;
+	padding: 15px;
+	overflow: hidden;
+	color: #444;
+}
+
+.excerpt-home-content p {
+	line-height: 1.4em;
+}
+
+.excerpt-home-content .mais {
+	width: 40px;
+	height: 40px;
+	background: #b9d62c;
+	float: right;
+}
+
+.excerpt-home-content .mais a {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
+
+.excerpt-home-content .autor {
+	float: right;
+	font-size: 1em;
+	margin: 10px 15px 0 0;
+}
+
+.excerpt-home-content .autor a {
+	color: #b9d62c;
+}
+
+.excerpt-home-content .dia, .excerpt-home-content .mes {
+	font-family: 'Bitter', serif;
+	float: left;
+}
+
+.excerpt-home-content .dia {
+	font-size: 2em;
+	color: #b9d62c;
+}
+
+.excerpt-home-content .mes {
+	font-size: 1.4em;
+	color: #b9d62c;
+	margin-top: 7px;
+}
+
 /*-------------------------------------------------------------------------------------------*/
 /* 7. FEATURED SLIDER */
 /*-------------------------------------------------------------------------------------------*/

@@ -14,8 +14,18 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /*-----------------------------------------------------------------------------------*/
 
     // Create new thumbnail sizes
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'thumb-home', 330, 220, TRUE );
     add_image_size( 'highlight', 665, 665, FALSE ); //665 pixels wide by 665 pixels maximum tall, soft crop mode
     add_image_size( 'highlight-cropped', 665, 300, TRUE ); //665 pixels wide by 665 pixels maximum tall, soft crop mode
+
+
+function count_comments() {
+	global $post;
+	$count_comments = wp_count_comments( $post->ID );
+	echo $count_comments->approved;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 /* Don't add any code below here or the sky will fall down */
