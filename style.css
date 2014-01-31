@@ -7,7 +7,7 @@ Author URI:     http://www.2aces.com.br
 Template:       peddlar                             
 Version:        0.1.0
 */
-
+/*
 LAYOUT
 Layout styles for desktop orientations is included in a media query at the bottom of this file.
 
@@ -2616,21 +2616,22 @@ h3.archive_year {
 
 #main-home {
 	max-width: 100%;
+	margin-left: 2%;
 }
 
 #main-home .cada-post-home {
-	/*width: 28%;*/
-	width: 250px;
-	height: 400px;
-	margin: 0 25px 25px 0;
+	width: 28.5%;
+	height: 340px;
+	margin: 0 2% 2% 0;
 	float: left;
 	background: #FFF;
 	padding: 10px;
 }
 
 .content-cada-post-home {
-	width: 100%;
-	height: 100%;
+    height: 340px;
+    margin: 0;
+    padding: 0;
 }
 
 #main-home .cada-post-home h3 {
@@ -2644,18 +2645,42 @@ h3.archive_year {
 	max-height: 220px;
 }
 
+.meta-cada-post-home {
+   bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
 .comments-post {
-	width: 15%;
+   background: none repeat scroll 0 0 #C1C1C1;
+    float: left;
+    height: 30px;
+    padding: 0 0 0 30px;
+    width: 30px;
+}
+
+.seta-post {
+    background: none repeat scroll 0 0 #CCCCCC;
+    float: right;
+    height: 30px;
+    right: 0;
+    width: 30px;
+}
+
+.seta-post a {
+	width: 100%;
 	height: 30px;
-	float: left;
-	background: #c1c1c1;
-	padding: 0 0 0 30px;
+	position: absolute;
 }
 
 .categories-post {
-	width: 60%;
-	height: 30px;
-	float: left;
+	bottom: 18px;
+    font-size: 1.1em;
+    height: 30px;
+    position: absolute;
+    width: 60%;
 }
 
 .categories-post ul {
@@ -2670,76 +2695,68 @@ h3.archive_year {
 	text-decoration: none;
 }
 
-.seta-post {
-	float: right;
-	position: relative;
-	width: 13%;
-	height: 30px;
-	background: #CCC;
-}
 
-.seta-post a {
-	width: 100%;
-	height: 30px;
-	position: absolute;
-}
 
 .excerpt-home {
 	padding: 10px;
-	/*width: 28%;*/
-	width: 100%;
-	height: 400px;
+	width: 94%;
+	height: 340px;
 	background: #eeedcf;
 	float: left;
 }
 
-.excerpt-home-content {
+.hover-home-content {
 	background: #eeedcf;
     color: #444444;
-    font-size: 0.85em;
+    font-size: 1em;
     overflow: hidden;
-    padding: 10px 15px;
-    width: 80%;
+    padding: 10px 13px;
+    width: 90%;
 }
 
 .excerpt-home-content p {
-	line-height: 1.4em;
+	font-size: 0.9em;
+	line-height: 1.5;
 }
 
-.excerpt-home-content .mais {
+.hover-home-content .mais {
 	width: 40px;
 	height: 40px;
 	background: #b9d62c;
-	float: right;
+	position: absolute;
+	bottom: 13px;
+	right: 13px;
 }
 
-.excerpt-home-content .mais a {
+.hover-home-content .mais a {
 	width: 40px;
 	height: 40px;
 	position: absolute;
 }
 
-.excerpt-home-content .autor {
+.hover-home-content .autor {
 	float: right;
-	font-size: 1em;
-	margin: 10px 15px 0 0;
+	font-size: 0.75em;
+    margin: 15px 0 5px;
+    max-width: 155px;
+    text-align: right;
 }
 
-.excerpt-home-content .autor a {
+.hover-home-content .autor a {
 	color: #b9d62c;
 }
 
-.excerpt-home-content .dia, .excerpt-home-content .mes {
+.hover-home-content .dia, .hover-home-content .mes {
 	font-family: 'Bitter', serif;
 	float: left;
 }
 
-.excerpt-home-content .dia {
+.hover-home-content .dia {
 	font-size: 2em;
 	color: #b9d62c;
 }
 
-.excerpt-home-content .mes {
+.hover-home-content .mes {
 	font-size: 1.4em;
 	color: #b9d62c;
 	margin-top: 7px;

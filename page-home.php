@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 <div class="cada-post-home">
 
-			<article <?php post_class( 'content-cada-post-home' ); ?>>
+			<article <?php post_class('content-cada-post-home'); ?>>
             
             <div class="thumb">
             <?php if ( has_post_thumbnail() ) {
@@ -50,25 +50,26 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <header>
             <h3><?php the_title(); ?></h3>
             </header>
-            
             <div class="meta-cada-post-home">
-            <div class="comments-post">
-            <?php count_comments();	?>
-            </div><!-- .comments-post -->
-            
-            <div class="seta-post">
-            <a href="<?php the_permalink(); ?>"></a>
-            </div><!-- .seta-post -->
+		        <div class="comments-post">
+		        <?php count_comments(); ?>
+		        </div><!-- .comments-post -->
+		        
+		        <div class="seta-post">
+		        <a href="<?php the_permalink(); ?>"></a>
+		        </div><!-- .seta-post -->
             </div><!-- .meta-cada-post-home -->
 
-            </article><!-- /.post .cada-post-home -->
+            </article><!-- .post -->
             
             <div class="excerpt-home contenthover">
-                <div class="excerpt-home-content">
+                <div class="hover-home-content">
                 <span class="dia"><?php the_time('d'); ?></span><span class="mes">/<?php the_date('M'); ?></span>
                 <div class="autor">Por <?php the_author_posts_link(); ?></div>
                 <div class="clear"></div>
-                <?php the_excerpt(); ?>
+					<div class="excerpt-home-content">
+               		 <?php the_excerpt(); ?>
+					</div>
                 <div class="categories-post">
                 <?php
                 $cada_category = get_the_category();
@@ -80,7 +81,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 <div class="mais">
                 <a href="<?php the_permalink(); ?>"></a>
                 </div><!-- .mais -->
-			</div><!-- .excerpt-home-content -->
+				</div><!-- .hover-home-content -->
                 
             </div><!-- /.excerpt-home -->
 </div>
