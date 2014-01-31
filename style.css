@@ -2780,6 +2780,9 @@ h3.archive_year {
 	text-decoration: none;
 }
 
+.categories-post a:hover {
+	color: #8fa32e;
+}
 
 
 .excerpt-home {
@@ -2841,6 +2844,11 @@ h3.archive_year {
 
 .hover-home-content .autor a {
 	color: #b9d62c;
+	text-decoration: none;
+}
+
+.hover-home-content .autor a:hover {
+	color: #8fa32e;
 }
 
 .hover-home-content .dia, .hover-home-content .mes {
