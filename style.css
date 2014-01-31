@@ -2736,7 +2736,7 @@ h3.archive_year {
 }
 
 .comments-post {
-    background: none;
+    background: url('images/comment-ballon.png') no-repeat scroll 0 -1px;
 	font-family: 'Bitter', serif;
 	color: #B9D62C;
     float: left;
@@ -2747,12 +2747,11 @@ h3.archive_year {
 }
 
 .seta-post {
-    background: none;
-	border: 1px solid #CCC;
+    background: url('images/cartao-virar.png') no-repeat scroll 0 8px;
     float: right;
     height: 30px;
     right: 0;
-    width: 30px;
+    width: 35px;
 }
 
 .seta-post a {
@@ -2802,7 +2801,7 @@ h3.archive_year {
 
 .excerpt-home-content p {
 	font-size: 0.9em;
-	line-height: 1.5;
+	line-height: 1.7;
 }
 
 .excerpt-home-content a {
@@ -2816,10 +2815,14 @@ h3.archive_year {
 .hover-home-content .mais {
 	width: 40px;
 	height: 40px;
-	background: #b9d62c;
+    background: url('images/mais-verde.png') no-repeat scroll 6px 6px #FFF;
 	position: absolute;
 	bottom: 13px;
 	right: 13px;
+}
+
+.hover-home-content .mais:hover {
+    background: url('images/mais-branco.png') no-repeat scroll 6px 6px #b9d62c;
 }
 
 .hover-home-content .mais a {
