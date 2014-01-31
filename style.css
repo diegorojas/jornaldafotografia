@@ -492,7 +492,7 @@ hr {
 }
 /* 1.2 Hyperlinks */
 a {
-  color: #77cb6d;
+  color: #b9d532;
   text-decoration: none;
 }
 a:hover {
@@ -510,7 +510,7 @@ a img:hover {
   opacity: 0.75;
 }
 mark {
-  background: #77cb6d;
+  background: #b9d532;
   color: #f7f7f7;
   padding: 2px 6px;
   -webkit-border-radius: 2px;
@@ -799,6 +799,13 @@ ul.nav li.current-menu-item > a {
   margin: 0;
   background: #ffffff;
 }
+
+#navigation ul.nav > li > a:hover {
+    background: none repeat scroll 0 0 #F1F1F1;
+    box-shadow: 0 0.207em 0 0 #b9d532 inset !important;
+    color: #252525;
+}
+
 /* 2.2.2 Top Navigation (optional) */
 #top {
   padding: 1em 1.618em;
@@ -1204,7 +1211,7 @@ ul.nav li.current-menu-item > a {
   line-height: 1em;
   width: 1em;
   margin-right: .207em;
-  color: #77cb6d;
+  color: #b9d532;
 }
 .post .post-meta .post-author a:before,
 .type-page .post-meta .post-author a:before {
@@ -1236,7 +1243,7 @@ ul.nav li.current-menu-item > a {
   line-height: 1em;
   width: 1em;
   content: "\f075";
-  color: #77cb6d;
+  color: #b9d532;
 }
 .post p.tags,
 .type-page p.tags {
@@ -1253,7 +1260,7 @@ ul.nav li.current-menu-item > a {
   line-height: 1em;
   width: 1em;
   content: '\f02c';
-  color: #77cb6d;
+  color: #b9d532;
 }
 .post .entry,
 .type-page .entry {
@@ -1266,7 +1273,7 @@ ul.nav li.current-menu-item > a {
   padding: 0 0 0 2.618em;
   quotes: "\201C" "\201D" "\2018" "\2019";
   font-style: italic;
-  border-left: 0.334em solid #77cb6d;
+  border-left: 0.334em solid #b9d532;
 }
 .post .entry .widget_woothemes_testimonials blockquote,
 .type-page .entry .widget_woothemes_testimonials blockquote {
@@ -1515,7 +1522,7 @@ ul.nav li.current-menu-item > a {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #fff;
-  background: #77cb6d;
+  background: #b9d532;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
 }
 #connect .social a.subscribe:before {
@@ -1804,7 +1811,7 @@ ul.nav li.current-menu-item > a {
 .widget_woodojo_tabs ul.tabs li a:hover,
 .woocommerce_tabs ul.tabs li a:hover,
 .woocommerce-tabs ul.tabs li a:hover {
-  color: #77cb6d;
+  color: #b9d532;
   background: #ffffff;
   text-decoration: none;
   color: #252525;
@@ -1935,7 +1942,7 @@ ul.nav li.current-menu-item > a {
 }
 .widget_woodojo_tabs ul.nav-tabs li.active a:after,
 .widget_woodojo_tabs ul.nav-tabs li a:hover:after {
-  color: #77cb6d;
+  color: #b9d532;
 }
 .widget_woodojo_tabs ul.nav-tabs li.active a:before,
 .widget_woodojo_tabs ul.nav-tabs li a:hover:before {
@@ -3078,10 +3085,10 @@ html[xmlns] .flexslider .slides {
   border-radius: 20px;
 }
 .flex-control-paging li a:hover {
-  background: #77cb6d;
+  background: #b9d532;
 }
 .flex-control-paging li a.flex-active {
-  background: #77cb6d;
+  background: #b9d532;
   cursor: default;
 }
 .flex-control-thumbs {
@@ -3266,7 +3273,7 @@ button.button,
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #77cb6d;
+  background: #b9d532;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
