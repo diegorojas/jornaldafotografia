@@ -2733,7 +2733,7 @@ h3.archive_year {
 .hover-home-content .mais {
 	width: 40px;
 	height: 40px;
-	background: #FFF;
+	background: #b9d62c;
 	position: absolute;
 	bottom: 13px;
 	right: 13px;
@@ -2743,10 +2743,6 @@ h3.archive_year {
 	width: 40px;
 	height: 40px;
 	position: absolute;
-}
-
-.hover-home-content .mais a:hover {
-	background: #b9d62c;
 }
 
 .hover-home-content .autor {
