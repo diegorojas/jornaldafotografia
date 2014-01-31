@@ -26,6 +26,12 @@ function count_comments() {
 	echo $count_comments->approved;
 }
 
+	/*wp_enqueue_style( 'tewenty-eleven-style', get_stylesheet_directory_uri() . '/twentyeleven-style.css' );*/
+
+
+		wp_enqueue_script( 'jquery.contenthover', get_stylesheet_directory_uri() . '/includes/js/jquery.contenthover.js', array( 'jquery' ) );
+		wp_enqueue_script( 'custom-contenthover', get_stylesheet_directory_uri() . '/includes/js/custom-contenthover.js', array( 'jquery.contenthover' ) );
+
 
 /*-----------------------------------------------------------------------------------*/
 /* Don't add any code below here or the sky will fall down */

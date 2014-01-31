@@ -2619,12 +2619,18 @@ h3.archive_year {
 }
 
 #main-home .cada-post-home {
-	width: 28%;
+	/*width: 28%;*/
+	width: 250px;
 	height: 400px;
 	margin: 0 25px 25px 0;
 	float: left;
 	background: #FFF;
 	padding: 10px;
+}
+
+.content-cada-post-home {
+	width: 100%;
+	height: 100%;
 }
 
 #main-home .cada-post-home h3 {
@@ -2680,19 +2686,20 @@ h3.archive_year {
 
 .excerpt-home {
 	padding: 10px;
-	width: 28%;
+	/*width: 28%;*/
+	width: 100%;
 	height: 400px;
-	background: #FFF;
+	background: #eeedcf;
 	float: left;
 }
 
 .excerpt-home-content {
 	background: #eeedcf;
-	width: 90%;
-	margin: 0 25px 25px 0;
-	padding: 15px;
-	overflow: hidden;
-	color: #444;
+    color: #444444;
+    font-size: 0.85em;
+    overflow: hidden;
+    padding: 10px 15px;
+    width: 80%;
 }
 
 .excerpt-home-content p {
