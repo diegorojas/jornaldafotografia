@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             </header>
             <div class="meta-cada-post-home">
 		        <div class="comments-post">
-		        <?php count_comments(); ?>
+			        <?php count_comments('%'); ?>
 		        </div><!-- .comments-post -->
 		        
 		        <div class="seta-post">
