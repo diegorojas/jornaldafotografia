@@ -25,6 +25,18 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 </div><!-- /.wrapper -->
 
+<div class="sub-footer">
+
+	<div class="infos">
+		<p class="texto">Fotospot, a galeria online de fotografia autoral.<br />Séries limitadas de fotógrafos consagrados.</p>
+   		<a class="conheca" href="conheça">Conheça</a>
+    </div><!-- infos -->
+
+</div><!-- .sub-footer -->
+
+<div class="bg-footer">
+</div><!-- .bg-footer -->
+
 <?php
 if ( is_home() && 'true' == $settings['homepage_enable_promo_message'] ) {
 	get_template_part( 'includes/promo-message' );
@@ -41,19 +53,11 @@ if ( ( woo_active_sidebar( 'footer-1' ) ||
 
 
 
-<div class="wrapper">
+<div class="wrapper-footer">
 
 	<?php woo_footer_before(); ?>
 
 	<section id="footer-widgets" class="col-full col-<?php echo $total; ?> fix">
-
-		<div class="fullwidth-widgets">
-
-			<?php woo_sidebar( 'footer-fullwidth' ); ?>
-
-		</div><!--/.fullwidth-widgets-->
-
-		<hr />
 
 		<?php $i = 0; while ( $i < $total ) { $i++; ?>
 			<?php if ( woo_active_sidebar( 'footer-' . $i ) ) { ?>
@@ -68,7 +72,8 @@ if ( ( woo_active_sidebar( 'footer-1' ) ||
 	</section><!-- /#footer-widgets  -->
 <?php } // End IF Statement ?>
 
-</div><!-- /.wrapper -->
+</div><!-- /.wrapper-footer -->
+
 <footer id="footer" class="col-full">
 
 	<div class="footer-inner">
@@ -82,10 +87,8 @@ if ( ( woo_active_sidebar( 'footer-1' ) ||
 		</div>
 
 		<div id="credit" class="col-right">
-	    <?php if( isset( $woo_options['woo_footer_right'] ) && $woo_options['woo_footer_right'] == 'true' ) {
-	    	echo stripslashes( $woo_options['woo_footer_right_text'] );
-		} else { ?>
-			<p><?php _e( 'Powered by', 'woothemes' ); ?> <a href="<?php echo esc_url( 'http://www.wordpress.org' ); ?>">WordPress</a>. <?php _e( 'Designed by', 'woothemes' ); ?> <a href="<?php echo ( isset( $woo_options['woo_footer_aff_link'] ) && ! empty( $woo_options['woo_footer_aff_link'] ) ? esc_url( $woo_options['woo_footer_aff_link'] ) : esc_url( 'http://www.woothemes.com/' ) ) ?>"><img src="<?php echo esc_url( get_template_directory_uri() . '/images/woothemes.png' ); ?>" width="74" height="19" alt="Woo Themes" /></a></p>
+	    <?php if( isset( $woo_options['woo_footer_right'] ) && $woo_options['woo_footer_right'] == 'true' ) { ?>
+			<?php woo_sidebar( 'footer-fullwidth' ); ?>
 		<?php } ?>
 		</div>
 
