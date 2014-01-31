@@ -2642,14 +2642,12 @@ h3.archive_year {
 
 .cada-post-home .thumb {
 	width: 100%;
-	max-height: 220px;
-	min-height: 195px;
+	height: 200px;
+	overflow: hidden;
 }
 
 .meta-cada-post-home {
-   bottom: 0;
-    margin: 0;
-    padding: 0;
+    bottom: 0;	
     position: absolute;
     width: 100%;
 }
@@ -2660,8 +2658,9 @@ h3.archive_year {
 	color: #B9D62C;
     float: left;
     height: 30px;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 35px;
     width: 30px;
+	margin-top: 6px;
 }
 
 .seta-post {
@@ -2704,7 +2703,7 @@ h3.archive_year {
 .excerpt-home {
 	padding: 10px;
 	width: 94%;
-	height: 340px;
+	height: 320px;
 	background: #eeedcf;
 	float: left;
 }
