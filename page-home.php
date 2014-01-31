@@ -64,11 +64,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             
             <div class="excerpt-home contenthover">
                 <div class="hover-home-content">
-                <span class="dia"><?php the_time('d'); ?></span><span class="mes">/<?php the_date('M'); ?></span>
+                <a href="<?php the_permalink(); ?>"><span class="dia"><?php the_time('d'); ?></span><span class="mes">/<?php the_date('M'); ?></span></a>
                 <div class="autor">Por <?php the_author_posts_link(); ?></div>
                 <div class="clear"></div>
 					<div class="excerpt-home-content">
+					<a href="<?php the_permalink(); ?>">
                		 <?php the_excerpt(); ?>
+					</a>
 					</div>
                 <div class="categories-post">
                 <?php
@@ -88,6 +90,24 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 
 		<?php } } ?> 
+
+		<?php /* Display navigation to next/previous pages when applicable */ ?>
+		<?php global $wp_query;  
+		$total_pages = $wp_query->max_num_pages;  
+		if ($total_pages > 1){  
+		  $current_page = max(1, get_query_var('paged'));  
+		  echo '<div class="page-nav-brasa">';  
+		  echo paginate_links(array(  
+			  'base' => get_pagenum_link(1) . '%_%',  
+			  'format' => 'page/%#%',  
+			  'current' => $current_page,  
+			  'total' => $total_pages,  
+			  'prev_text' => '<< Anteriores',  
+			  'next_text' => 'Pr&oacute;ximos >>'  
+			));  
+		  echo '</div>';  
+		} 
+		?>
 
 		<?php wp_reset_query(); ?>
 

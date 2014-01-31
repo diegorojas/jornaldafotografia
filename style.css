@@ -2722,6 +2722,14 @@ h3.archive_year {
 	line-height: 1.5;
 }
 
+.excerpt-home-content a {
+		color: #474747;
+}
+
+.excerpt-home-content  a:hover {
+	text-decoration: none;
+}
+
 .hover-home-content .mais {
 	width: 40px;
 	height: 40px;
@@ -2763,6 +2771,43 @@ h3.archive_year {
 	font-size: 1.4em;
 	color: #b9d62c;
 	margin-top: 7px;
+}
+
+.page-nav-brasa {
+	margin : 0 auto;
+	padding: 20px;
+	clear: both;
+	width: 100%;
+	text-align: center;
+    font-family: 'Bitter',serif;
+}
+
+
+.page-nav-brasa span.current {
+    background: none repeat scroll 0 0 #b9d62c;
+    color: #FFFFFF;
+    display: inline;
+    margin-left: 10px;
+    padding: 3px 7px;
+}
+
+
+.page-nav-brasa a:link, .page-nav-brasa a:visited {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #666666;
+    display: inline;
+    margin-left: 10px;
+    padding: 3px 7px;
+    text-decoration: none;
+}
+
+
+.page-nav-brasa.current, .page-nav-brasa a:hover {
+    background: none repeat scroll 0 0 #b9d62c;
+    color: #FFFFFF;
+    display: inline;
+    margin-left: 10px;
+    padding: 3px 7px;
 }
 
 /*-------------------------------------------------------------------------------------------*/
