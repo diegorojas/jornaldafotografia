@@ -531,7 +531,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "lato", sans-serif;
+  font-family: "Bitter", serif;
   color: #474747;
   margin: 0 0 .618em;
   font-weight: 700;
@@ -985,7 +985,6 @@ ul.nav li.current-menu-item > a {
 /* 2.6 Footer */
 
 .sub-footer {
-	font-family: 'Bitter', serif;
 	width: 100%;
 	min-height: 275px;
 	background-color:#333;
@@ -998,7 +997,7 @@ ul.nav li.current-menu-item > a {
 .sub-footer .infos {
 	width: 60%;
 	height: auto;
-	padding: 8% 0 0 0;
+	padding: 7.5% 0 0 0;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -1006,16 +1005,24 @@ ul.nav li.current-menu-item > a {
 .sub-footer .texto {
 	float: left;
 	margin-right: 15%;
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 .sub-footer .conheca {
+	font-family: 'Bitter', serif;
+	font-weight: bold;
+	font-size: 0.9em;
 	float: left;
-	padding: 10px 30px;
+	padding: 10px 45px;
 	background: #b9d62c;
 	color: #FFF;
 	text-transform: uppercase;
-	margin-top: 2%;
+	margin-top: 2.5%;
+	border-radius: 2px;
+}
+
+.sub-footer .conheca:hover {
+	background: #8FA32E;
 }
 
 .sub-footer .conheca:hover {
@@ -1036,7 +1043,6 @@ ul.nav li.current-menu-item > a {
 }
 
 .widget_woo_subscribe {
-	background-color: #FFF;
 	padding: 20px 25px;
 }
 
@@ -1050,7 +1056,6 @@ ul.nav li.current-menu-item > a {
 }
 
 .widget_categories {
-	background-color: #FFF;
 	padding: 20px 25px;
 }
 
@@ -1068,22 +1073,23 @@ ul.nav li.current-menu-item > a {
 .widget_categories li {
 	margin-bottom: 5px;
 }
-
-.widget_categories a {
-	color: #b9d62c;
+.widget_categories a:hover {
+	text-decoration: none;
 }
 
 #footer-widgets .widget h3 {
 	font-size: 1.4em;
     line-height: 1.4;
     text-transform: none !important;
+	font-weight: 300 !important;
 }
 
 #footer-widgets.col-4 .block  {
 
     margin-left: 0 !important;
     margin-right: 2% !important;
-    width: 20% !important;
+    width: 20% !important;	
+	background-color: #f9f9f9;
 }
 
 #footer-widgets.col-4 .footer-widget-1 {
@@ -1093,7 +1099,6 @@ ul.nav li.current-menu-item > a {
 
 #footer-widgets.col-4 .footer-widget-3 {
 	width: 47% !important;
-	background-color: #f9f9f9;
 	margin-bottom: 2em;
 
 }
@@ -1103,6 +1108,15 @@ ul.nav li.current-menu-item > a {
 	font-family: 'Bitter', serif;
     font-size: 1.4em !important;
     line-height: 1.4;
+}
+
+p.tribe-events-widget-link {
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-top: -1.9%;
+    position: absolute;
+	font-family: 'Bitter', serif;
+	text-transform: uppercase;
 }
 
 .tribe-events-list-widget ol.vcalendar {
@@ -1121,16 +1135,16 @@ ul.nav li.current-menu-item > a {
     width: 46%;
 }
 
-p.tribe-events-widget-link {
-    margin-bottom: 0;
-    margin-left: 8%;
-    margin-top: -1.8%;
-    position: absolute;
-	font-family: 'Bitter', serif;
-	text-transform: uppercase;
+.tribe-events-list-widget ol li a:hover {
+	text-decoration: none;
+}
+
+.tribe-events-list-widget ol li .duration {
+font-family: 'Bitter', serif;
 }
 
 #footer {
+	font-family: 'Bitter', serif;
   padding: 2.618em 1.618em;
   margin-left: -1.618em;
   margin-right: -1.618em;
@@ -1210,9 +1224,7 @@ p.tribe-events-widget-link {
   *margin-right: 2.0312499999999996%;
   margin-bottom: 5.997em;
 }
-#footer-widgets .widget {
-  margin-bottom: 2em;
-}
+
 /* 2.7 Breadcrumbs */
 #breadcrumbs {
   margin-bottom: 3.706em;
@@ -2910,6 +2922,7 @@ h3.archive_year {
 	position: absolute;
 	bottom: 13px;
 	right: 13px;
+	border-radius: 2px;
 }
 
 .hover-home-content .mais:hover {
@@ -3347,7 +3360,7 @@ button.button,
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  font-family: "lato", sans-serif;
+  font-family: "Bitter", serif;
   text-shadow: none;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -3370,7 +3383,7 @@ input.button:hover,
 button.button:hover,
 .wrapper .woo-sc-button:hover,
 .slide-content .woo-sc-button:hover {
-  background: #66ba5c;
+  background: #B9D62C;
   color: #fff;
   text-decoration: none !important;
 }
