@@ -476,7 +476,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  background: #f7f7f7;
+  background: url("images/bg-header.jpg") no-repeat scroll left -95px #f7f7f7;
   word-wrap: break-word;
 }
 img {
