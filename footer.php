@@ -25,54 +25,57 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 </div><!-- /.wrapper -->
 
-<div class="sub-footer">
+	<div class="sub-footer">
 
-	<div class="infos">
-		<p class="texto">Fotospot, a galeria online de fotografia autoral.<br />Séries limitadas de fotógrafos consagrados.</p>
-   		<a class="conheca" href="conheça">Conheça</a>
-    </div><!-- infos -->
+		<div class="infos">
+			<p class="texto">Fotospot, a galeria online de fotografia autoral.<br />Séries limitadas de fotógrafos consagrados.</p>
+	   		<a class="conheca" href="conheça">Conheça</a>
+		</div><!-- infos -->
 
-</div><!-- .sub-footer -->
+	</div><!-- .sub-footer -->
 
-<div class="bg-footer">
-</div><!-- .bg-footer -->
+	<div class="bg-footer">
 
-<?php
-if ( is_home() && 'true' == $settings['homepage_enable_promo_message'] ) {
-	get_template_part( 'includes/promo-message' );
-}
-?>
+			<?php
+			if ( is_home() && 'true' == $settings['homepage_enable_promo_message'] ) {
+				get_template_part( 'includes/promo-message' );
+			}
+			?>
 
-<?php
-if ( ( woo_active_sidebar( 'footer-1' ) ||
-		   woo_active_sidebar( 'footer-2' ) ||
-		   woo_active_sidebar( 'footer-3' ) ||
-		   woo_active_sidebar( 'footer-4' ) ) && $total > 0 ) {
-?>
-
+			<?php
+			if ( ( woo_active_sidebar( 'footer-1' ) ||
+					   woo_active_sidebar( 'footer-2' ) ||
+					   woo_active_sidebar( 'footer-3' ) ||
+					   woo_active_sidebar( 'footer-4' ) ) && $total > 0 ) {
+			?>
 
 
 
-<div class="wrapper-footer">
 
-	<?php woo_footer_before(); ?>
+			<div class="wrapper-footer">
 
-	<section id="footer-widgets" class="col-full col-<?php echo $total; ?> fix">
+				<?php woo_footer_before(); ?>
 
-		<?php $i = 0; while ( $i < $total ) { $i++; ?>
-			<?php if ( woo_active_sidebar( 'footer-' . $i ) ) { ?>
+				<section id="footer-widgets" class="col-full col-<?php echo $total; ?> fix">
 
-		<div class="block footer-widget-<?php echo $i; ?>">
-        	<?php woo_sidebar( 'footer-' . $i ); ?>
-		</div>
+					<?php $i = 0; while ( $i < $total ) { $i++; ?>
+						<?php if ( woo_active_sidebar( 'footer-' . $i ) ) { ?>
 
-	        <?php } ?>
-		<?php } // End WHILE Loop ?>
+					<div class="block footer-widget-<?php echo $i; ?>">
+						<?php woo_sidebar( 'footer-' . $i ); ?>
+					</div>
 
-	</section><!-- /#footer-widgets  -->
-<?php } // End IF Statement ?>
+						<?php } ?>
+					<?php } // End WHILE Loop ?>
 
-</div><!-- /.wrapper-footer -->
+				</section><!-- /#footer-widgets  -->
+			<?php } // End IF Statement ?>
+
+			</div><!-- /.wrapper-footer -->
+
+	</div><!-- .bg-footer -->
+
+<div class="clear"></div>
 
 <footer id="footer" class="col-full">
 

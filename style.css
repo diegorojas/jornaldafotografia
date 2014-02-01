@@ -987,22 +987,26 @@ ul.nav li.current-menu-item > a {
 .sub-footer {
 	font-family: 'Bitter', serif;
 	width: 100%;
-	height: 300px;
+	min-height: 275px;
 	background-color:#333;
 	color: #FFF;
+	float: left;
+	margin: 0;
+	padding:0;
 }
 
 .sub-footer .infos {
-	width: 45%;
+	width: 60%;
 	height: auto;
-	padding: 110px 0 0 0;
+	padding: 8% 0 0 0;
 	margin: 0 auto;
 	overflow: hidden;
 }
 
 .sub-footer .texto {
 	float: left;
-	margin-right: 25px;
+	margin-right: 15%;
+	font-size: 1.4em;
 }
 
 .sub-footer .conheca {
@@ -1011,6 +1015,7 @@ ul.nav li.current-menu-item > a {
 	background: #b9d62c;
 	color: #FFF;
 	text-transform: uppercase;
+	margin-top: 2%;
 }
 
 .sub-footer .conheca:hover {
@@ -1019,12 +1024,14 @@ ul.nav li.current-menu-item > a {
 
 .bg-footer {
 	width: 100%;
-	min-height: 350px;
+	float: left;
 	background: #e5ead6;
+	margin: 0 0 -1px;
+	padding:2% 0 0;
 }
 
 .wrapper-footer {
-	margin: -310px auto 0;
+	margin: 0 auto;
     max-width: 66.498em;
 }
 
@@ -1072,9 +1079,22 @@ ul.nav li.current-menu-item > a {
     text-transform: none !important;
 }
 
-.footer-widget-3 {
-	width: 45% !important;
+#footer-widgets.col-4 .block  {
+
+    margin-left: 0 !important;
+    margin-right: 2% !important;
+    width: 20% !important;
+}
+
+#footer-widgets.col-4 .footer-widget-1 {
+    margin-left: 2% !important;
+	width: 25% !important;
+}
+
+#footer-widgets.col-4 .footer-widget-3 {
+	width: 47% !important;
 	background-color: #f9f9f9;
+	margin-bottom: 2em;
 
 }
 
@@ -1089,8 +1109,8 @@ ul.nav li.current-menu-item > a {
     float: left;
     padding: 4%;
     width: 94%;
-	font-size: 0.85em;
-	margin-bottom: 0;
+	font-size: 0.9em;
+	margin-bottom: 0 !important;
 }
 
 .tribe-events-list-widget ol li {
@@ -1170,7 +1190,7 @@ p.tribe-events-widget-link {
   -webkit-filter: grayscale(0);
 }
 #footer-widgets {
-  padding: 0 0 5.997em 0;
+  padding: 0;
 }
 #footer-widgets hr {
   height: 4px;
@@ -1191,7 +1211,7 @@ p.tribe-events-widget-link {
   margin-bottom: 5.997em;
 }
 #footer-widgets .widget {
-  margin-bottom: 2.618em;
+  margin-bottom: 2em;
 }
 /* 2.7 Breadcrumbs */
 #breadcrumbs {
