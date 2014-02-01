@@ -916,9 +916,10 @@ ul.nav li.current-menu-item > a {
   text-align: center;
   line-height: 1.75;
 }
+
 #header .nav-toggle a {
   color: #474747;
-  text-transform: uppercase;
+  text-transform: none;
 }
 #header .nav-toggle a:hover {
   text-decoration: none;
@@ -1061,6 +1062,50 @@ ul.nav li.current-menu-item > a {
 
 .widget_categories a {
 	color: #b9d62c;
+}
+
+#footer-widgets .widget h3 {
+	font-size: 1.4em;
+    line-height: 1.4;
+    text-transform: none !important;
+}
+
+.footer-widget-3 {
+	width: 45% !important;
+	background-color: #f9f9f9;
+
+}
+
+.tribe-events-list-widget h3 {
+	margin: 3% 0 0 4%;
+	font-family: 'Bitter', serif;
+    font-size: 1.4em !important;
+    line-height: 1.4;
+}
+
+.tribe-events-list-widget ol.vcalendar {
+    float: left;
+    padding: 4%;
+    width: 94%;
+	font-size: 0.85em;
+	margin-bottom: 0;
+}
+
+.tribe-events-list-widget ol li {
+	float: left;
+	margin-bottom: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 46%;
+}
+
+p.tribe-events-widget-link {
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-top: -1.8%;
+    position: absolute;
+	font-family: 'Bitter', serif;
+	text-transform: uppercase;
 }
 
 #footer {
