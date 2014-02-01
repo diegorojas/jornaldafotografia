@@ -14,11 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	global $woo_options;
 ?>
        
-    <div id="content" class="page col-full">
-
     	<?php woo_main_before(); ?>
     	
-		<div id="main-home" class="col-left"> 			
+		<div id="main-home" class="col-full"> 			
 
         <?php
 
@@ -116,6 +114,5 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		
 		<?php woo_main_after(); ?>
 
-    </div><!-- /#content -->
 		
 <?php get_footer(); ?>

@@ -189,7 +189,8 @@ body:after {
 /*----------------------*/
 @media only screen and (min-width: 800px) {
   /* 1. GLOBAL DROPDOWN STYLES (these are purely for the dropdown layout and you should only edit the width of the dropdowns) */
-  ul.nav {
+
+ul.nav {
     position: relative;
     margin-bottom: 0;
     /* LEVEL 2 */
@@ -522,6 +523,7 @@ body:after {
     *margin-left: 2.0312499999999996%;
     *margin-right: 2.0312499999999996%;
   }
+
   #sidebar {
     margin-top: 0;
     display: inline;

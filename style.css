@@ -287,7 +287,8 @@ sub {
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
 .fix,
 .col-full {
-  zoom: 1;
+	padding:0;
+	zoom: 1;
 }
 /*-------------------------------------------------------------------------------------------*/
 /* IMPORTS */
@@ -1084,7 +1085,7 @@ ul.nav li.current-menu-item > a {
 	font-weight: 300 !important;
 }
 
-#footer-widgets.col-4 .block  {
+#footer-widgets.col-3 .block  {
 
     margin-left: 0 !important;
     margin-right: 2% !important;
@@ -1092,12 +1093,12 @@ ul.nav li.current-menu-item > a {
 	background-color: #f9f9f9;
 }
 
-#footer-widgets.col-4 .footer-widget-1 {
+#footer-widgets.col-3 .footer-widget-1 {
     margin-left: 2% !important;
 	width: 25% !important;
 }
 
-#footer-widgets.col-4 .footer-widget-3 {
+#footer-widgets.col-3 .footer-widget-3 {
 	width: 47% !important;
 	margin-bottom: 2em;
 
@@ -2803,8 +2804,8 @@ h3.archive_year {
 }
 
 #main-home {
-	max-width: 100%;
 	margin-left: 2.2%;
+	padding:0;
 }
 
 #main-home .cada-post-home {
@@ -2814,6 +2815,12 @@ h3.archive_year {
 	float: left;
 	background: #FFF;
 	padding: 10px;
+}
+
+@media (max-width: 600px) {
+	#main-home .cada-post-home {
+		width: 44% !important;
+	}
 }
 
 .content-cada-post-home {
@@ -3844,3 +3851,10 @@ img.ui-datepicker-trigger {
 	box-shadow: inset 0 0 7px hsla(0,0%,0%,.3) /*Shine*/,
 				0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
 }
+
+/* RESPONSIVE STRUCTURE FROM BRASA*/
+
+
+
+
+

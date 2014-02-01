@@ -65,7 +65,7 @@ woo_head();
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
                 
-			<span class="nav-toggle"><a href="#navigation"><span><?php _e( 'Navigation', 'woothemes' ); ?></span></a></span>
+			
 		</div>
 
 		<div class="header-direita">		
@@ -75,7 +75,7 @@ woo_head();
 		</div>
 
         <?php woo_nav_before(); ?>
-
+	<span class="nav-toggle"><a href="#navigation"><span><?php _e( 'Navigation', 'woothemes' ); ?></span></a></span>
 	</header><!-- /#header -->
 
 </div><!--/.wrapper-->
