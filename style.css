@@ -476,7 +476,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  background: url("images/bg-header.jpg") no-repeat scroll left -95px #f7f7f7;
+  background: url("images/bg-header.jpg") no-repeat scroll left -135px #f7f7f7;
   word-wrap: break-word;
 }
 img {
@@ -749,6 +749,8 @@ table tbody tr:last-child th {
 ul.nav li a {
   padding: .5em 1em;
   display: block;
+  font-weight: 500 !important;
+  padding: 1.416em 1.2em !important;
 }
 ul.nav li.current-menu-item > a {
   background: #ffffff;
@@ -761,6 +763,7 @@ ul.nav li.current-menu-item > a {
   margin-left: -1.618em;
   margin-right: -1.618em;
   padding: 0 .618em;
+  margin-bottom: 2.236em !important;
 }
 #navigation ul.rss {
   margin: 0 1em 0 0;
@@ -784,8 +787,11 @@ ul.nav li.current-menu-item > a {
   color: #474747;
 }
 #navigation ul {
-  list-style: none;
-  margin: 0;
+	list-style: none;
+	margin: 0;
+	font-family: 'Bitter', serif;
+	font-size: 0.9em;
+	font-weight: none;
 }
 #navigation ul ul.sub-menu {
   margin-left: 1em;
@@ -842,7 +848,7 @@ ul.nav li.current-menu-item > a {
 
 #header .site-title {
   font-family: "Gill Sans", "Droid Sans", sans-serif;
-	margin: 10% 0 0 5%;
+	margin: 6% 0 0 5%;
 	text-transform: lowercase !important;
 }
 #header .site-description {
@@ -950,20 +956,16 @@ ul.nav li.current-menu-item > a {
 }
 
 .header-direita {
-
 	width: 35%;
 	background: none repeat scroll 0 0 #efedd0;
 	float: left;
-	height: 180px;
-
 }
-
 
 .header-direita nav.cart {
 
 	width: 75px;
 	height: 75px;
-    margin: 17% 0 2% 17%;
+    margin: 10% 0 10% 13%;
     clear: left;
 }
 
@@ -2765,13 +2767,13 @@ h3.archive_year {
 
 #main-home {
 	max-width: 100%;
-	margin-left: 2%;
+	margin-left: 2.2%;
 }
 
 #main-home .cada-post-home {
 	width: 28.5%;
 	height: 340px;
-	margin: 0 2% 2% 0;
+	margin: 0 2.8% 2% 0;
 	float: left;
 	background: #FFF;
 	padding: 10px;
@@ -2935,7 +2937,7 @@ h3.archive_year {
 
 .page-nav-brasa {
 	margin : 0 auto;
-	padding: 20px;
+	padding: 5px 0 20px 0;
 	clear: both;
 	width: 100%;
 	text-align: center;
