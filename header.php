@@ -61,14 +61,18 @@ woo_head();
 	<header id="header" class="col-full">
 		<?php woo_header_inside(); ?>
 
-	    <hgroup>
+	    <div class="hgroup">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-                <nav class="nav cart" id="logo-header">
+                
+			<span class="nav-toggle"><a href="#navigation"><span><?php _e( 'Navigation', 'woothemes' ); ?></span></a></span>
+		</div>
+
+		<div class="header-direita">		
+				<nav class="cart" id="logo-header">
                     <a href="http://www.fotospot.com.br"><img src="<?php bloginfo( 'stylesheet_directory' ); echo '/images/logo-fotospot-75px-transparent.png'; ?>" title="Fotospot - Fotografia Autoral" alt="Fotospot - Fotografia Autoral"></a>
                 </nav>
-			<span class="nav-toggle"><a href="#navigation"><span><?php _e( 'Navigation', 'woothemes' ); ?></span></a></span>
-		</hgroup>
+		</div>
 
         <?php woo_nav_before(); ?>
 

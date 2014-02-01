@@ -144,7 +144,7 @@ figure,
 figcaption,
 footer,
 header,
-hgroup,
+.hgroup,
 menu,
 nav,
 output,
@@ -821,7 +821,7 @@ ul.nav li.current-menu-item > a {
 }
 /* 2.3 Header */
 #header {
-  padding: 1.618em 0 0 0;
+  padding: 0 !important;
   margin-bottom: 1.618em;
   margin-left: -1.618em;
   margin-right: -1.618em;
@@ -839,23 +839,17 @@ ul.nav li.current-menu-item > a {
   padding-left: 1.618em;
   padding-right: 1.618em;
 }
-#header #logo {
-  float: left;
-  margin-bottom: 1.618em;
-}
+
 #header .site-title {
   font-family: "Gill Sans", "Droid Sans", sans-serif;
-  margin: 0;
+	margin: 10% 0 0 5%;
+	text-transform: lowercase !important;
 }
 #header .site-description {
-  margin-bottom: 1.618em;
+	margin: 0 0 0 5% !important;
+
 }
-#header .site-description + .nav.cart {
-	/* margin-top: -1.618em; */
-	float: right;
-	margin-top: -5.4em;
-	margin-bottom: 1.618em;
-}
+
 #header .site-title,
 #header .site-description {
   color: #000;
@@ -864,39 +858,41 @@ ul.nav li.current-menu-item > a {
 #header .site-title a,
 #header .site-description a {
   color: #141414;
-  text-transform: uppercase;
-  font-weight: normal;
+  text-transform: none;
+  font-weight:500 !important;
   text-decoration: none;
 }
-#header .site-title a:hover,
+
 #header .site-description a:hover {
+  text-decoration: none;
+}
+
+#header .site-title a:hover {
   text-decoration: underline;
 }
-#header .site-description {
-  line-height: 1.618em;
+
+#header .hgroup {
+	width: 65%; 
+	float: left;
+	zoom: 1;
 }
-#header hgroup {
-  *zoom: 1;
-}
-#header hgroup:after {
+#header .hgroup:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
   clear: both;
 }
-#header hgroup:before,
-#header hgroup:after {
+#header .hgroup:before,
+#header .hgroup:after {
   content: "";
   display: table;
 }
-#header hgroup:after {
+#header .hgroup:after {
   clear: both;
 }
-#header hgroup nav.cart {
-  clear: left;
-  padding-top: 1em;
-}
+
+
 #header .nav-toggle {
   cursor: pointer;
   clear: both;
@@ -945,13 +941,31 @@ ul.nav li.current-menu-item > a {
 }
 #header .site-description {
   color: #616161;
-  font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif
+  font-family: "Bitter",Calibri,serif
   font-style: italic;
-  text-transform: uppercase;
 }
 #header #topad {
   float: right;
 }
+
+.header-direita {
+
+	width: 35%;
+	background: none repeat scroll 0 0 #efedd0;
+	float: left;
+	height: 180px;
+
+}
+
+
+.header-direita nav.cart {
+
+	width: 75px;
+	height: 75px;
+    margin: 17% 0 2% 17%;
+    clear: left;
+}
+
 /* 2.4 Content */
 /* 2.4.1 Slider */
 /* 2.5 Sidebar */
