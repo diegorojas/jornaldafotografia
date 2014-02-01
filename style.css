@@ -1121,17 +1121,15 @@ p.tribe-events-widget-link {
 
 .tribe-events-list-widget ol.vcalendar {
     float: left;
-    padding: 4%;
+    padding: 3% 4%;
     width: 94%;
-	font-size: 0.9em;
 	margin-bottom: 0 !important;
 }
 
 .tribe-events-list-widget ol li {
 	float: left;
-	margin-bottom: 15px;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    margin-bottom: 12px !important;
+    margin-right: 15px !important;
     width: 46%;
 }
 
@@ -1140,15 +1138,22 @@ p.tribe-events-widget-link {
 }
 
 .tribe-events-list-widget ol li .duration {
-font-family: 'Bitter', serif;
+	font-family: 'Bitter', serif;
+	font-weight: 500;
+}
+
+.tribe-events-list-widget h4.entry-title {
+	margin-bottom: 0 !important;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
 }
 
 #footer {
 	font-family: 'Bitter', serif;
-  padding: 2.618em 1.618em;
-  margin-left: -1.618em;
-  margin-right: -1.618em;
-  background: #eaeaea;
+	padding: 2.618em 1.618em;
+	margin-left: -1.618em;
+	margin-right: -1.618em;
+	background: #eaeaea;
 }
 #footer #credit img {
   vertical-align: middle;
@@ -1263,7 +1268,7 @@ font-family: 'Bitter', serif;
 }
 .post header h1,
 .type-page header h1 {
-  font-weight: bold;
+  font-weight: 500;
 }
 .post header h1 a:link,
 .type-page header h1 a:link,
@@ -2821,6 +2826,7 @@ h3.archive_year {
 	font-size: 1.2em;
 	margin: 10px 0;
 	font-family: 'Bitter', serif;
+	font-weight: 500;
 }
 
 .cada-post-home .thumb {
