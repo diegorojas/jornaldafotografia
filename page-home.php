@@ -35,6 +35,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 <div class="cada-post-home">
 
+	<div id="f1_container">
+	<div id="f1_card" class="shadow">
+		  <div class="front face">
 			<article <?php post_class('content-cada-post-home'); ?>>
             
             <div class="thumb">
@@ -48,6 +51,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             <header>
             <h3><?php the_title(); ?></h3>
             </header>
+			<div class="clear"></div>
+
             <div class="meta-cada-post-home">
 		        <div class="comments-post">
 			        <?php count_comments('%'); ?>
@@ -59,7 +64,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             </div><!-- .meta-cada-post-home -->
 
             </article><!-- .post -->
-            
+			</div>
+	  	<div class="back face center">
             <div class="excerpt-home contenthover">
                 <div class="hover-home-content">
                 <a href="<?php the_permalink(); ?>"><span class="dia"><?php the_time('d'); ?></span><span class="mes">/<?php the_date('M'); ?></span></a>
@@ -84,7 +90,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				</div><!-- .hover-home-content -->
                 
             </div><!-- /.excerpt-home -->
+
+	  </div>
+
 </div>
+</div>
+
+</div><!-- /cada-post-home -->
 
 
 		<?php } } ?> 
@@ -109,9 +121,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 		<?php wp_reset_query(); ?>
 
-        
+       
 		</div><!-- /#main-home -->
-		
+
 		<?php woo_main_after(); ?>
 
 		

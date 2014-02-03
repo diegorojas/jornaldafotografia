@@ -2817,6 +2817,19 @@ h3.archive_year {
 	padding: 10px;
 }
 
+
+#f1_container {
+  position: relative;
+   height: 340px;
+    padding: 0;
+    width: 100%;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+
+
 @media (max-width: 600px) {
 	#main-home .cada-post-home {
 		width: 44% !important;
@@ -2845,7 +2858,7 @@ h3.archive_year {
 .meta-cada-post-home {
     bottom: 0;	
     position: absolute;
-    width: 100%;
+    max-width: 100%;
 }
 
 .comments-post {
@@ -2861,15 +2874,15 @@ h3.archive_year {
 
 .seta-post {
     background: url('images/cartao-virar.png') no-repeat scroll 0 8px;
-    float: right;
+    float: left;
     height: 30px;
-    right: 0;
     width: 35px;
+	margin-left: 190px;
 }
 
 .seta-post a {
-	width: 100%;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	position: absolute;
 }
 
@@ -3855,6 +3868,26 @@ img.ui-datepicker-trigger {
 /* RESPONSIVE STRUCTURE FROM BRASA*/
 
 
-
-
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.4s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 0;
+  color: white;
+}
 
