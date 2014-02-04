@@ -90,9 +90,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		</div>
 
 		<div id="credit" class="col-right">
-	    <?php if( isset( $woo_options['woo_footer_right'] ) && $woo_options['woo_footer_right'] == 'true' ) { ?>
-			<?php woo_sidebar( 'footer-fullwidth' ); ?>
-		<?php } ?>
+
+	   	<?php woo_display_social_icons (); ?>
+		 <?php if( isset( $woo_options['woo_footer_right'] ) && $woo_options['woo_footer_right'] == 'true' )?>
 		</div>
 
 	</div><!--/.footer-inner-->

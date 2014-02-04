@@ -1164,8 +1164,31 @@ p.tribe-events-widget-link {
 }
 #footer .col-left,
 #footer .col-right {
-  font-size: .875em;
+  font-size: 0.75em;
 }
+
+#copyright.col-left {
+	width: 66% !important;
+	float: left !important;
+}
+
+#credit.col-right {
+	width: 24% !important;
+	float: left !important;
+	margin-top: -6px;
+}
+
+
+#credit #connect {
+    margin-bottom: 0;
+}
+
+
+#connect .social {
+    margin-bottom: 0 !important;
+}
+
+
 #footer p {
   margin: 0;
 }
