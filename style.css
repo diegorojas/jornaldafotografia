@@ -1730,17 +1730,33 @@ p.tribe-events-widget-link {
 }
 /* 4.2 Specific Widgets */
 /* SEARCH FORM */
+
+.main-nav-inner .search_main {
+	float: right;
+	width: 32.55%;
+	margin-right: 2.08333%;
+}
+
+.main-nav-inner .search_main #searchform {
+  border: none;
+  background: none repeat scroll 0 0 #f2f2f2;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+	margin: 0;
+}
+
+.main-nav-inner .search_main #searchform #s {
+    padding: 1.17em 3em 1.17em 1.17em;
+	}
+
 #searchform {
   width: 100%;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
-
   -moz-box-sizing: border-box;
   /* Firefox, other Gecko */
-
   box-sizing: border-box;
   /* Opera/IE 8+ */
-
   position: relative;
   border-color: #d5d5d5;
   border-width: 1px;
@@ -1777,10 +1793,10 @@ p.tribe-events-widget-link {
   border: none;
   overflow: hidden;
   margin: 0;
-  height: 1.618em;
+  height: 1.8em;
   width: 1.618em;
   background: url('images/ico-search.png') no-repeat center;
-  background-size: 16px 16px;
+  background-size: 17px 17px;
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;

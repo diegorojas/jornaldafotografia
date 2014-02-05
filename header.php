@@ -96,6 +96,8 @@ woo_head();
 		</ul><!-- /#nav -->
 	    <?php } ?>
 
+		<?php get_search_form(); ?>
+
 	    <?php woo_nav_after(); ?>
 
 	</div><!--/.main-nav-inner-->
