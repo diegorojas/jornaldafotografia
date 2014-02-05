@@ -477,7 +477,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  background: url("images/bg-header.jpg") no-repeat scroll left -135px #f7f7f7;
+  background: #f7f7f7;
   word-wrap: break-word;
 }
 img {
@@ -835,7 +835,7 @@ ul.nav li.current-menu-item > a {
   margin-bottom: 0;
   clear: both;
   position: relative;
-  background: #ffffff;
+  background: url("images/bg-header.jpg") no-repeat scroll left -160px #f7f7f7 !important; 
   -webkit-border-bottom-left-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
