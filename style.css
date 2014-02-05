@@ -1113,14 +1113,14 @@ ul.nav li.current-menu-item > a {
 }
 
 p.tribe-events-widget-link {
-	background: url("images/mais-verde.png") no-repeat scroll right -2px rgba(0, 0, 0, 0);
+	background: url("images/seta-verde.png") no-repeat scroll right 8px rgba(0, 0, 0, 0);
     font-family: 'Bitter',serif;
     margin-bottom: 0;
     margin-left: 110px;
     margin-top: -28px;
     position: absolute;
     text-transform: uppercase;
-    width: 215px;
+    width: 200px;
 }
 
 .tribe-events-list-widget ol.vcalendar {
