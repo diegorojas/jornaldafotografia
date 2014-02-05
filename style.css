@@ -879,7 +879,7 @@ ul.nav li.current-menu-item > a {
 }
 
 #header .hgroup {
-	width: 66%; 
+	width: 67%; 
 	float: left;
 	zoom: 1;
 }
@@ -957,7 +957,7 @@ ul.nav li.current-menu-item > a {
 }
 
 .header-direita {
-	width: 34%;
+	width: 33%;
 	background: none repeat scroll 0 0 #efedd0;
 	float: left;
 }
@@ -974,7 +974,9 @@ ul.nav li.current-menu-item > a {
 /* 2.4.1 Slider */
 /* 2.5 Sidebar */
 #sidebar {
-  overflow: hidden;
+   margin-left: 1.65% !important;
+    overflow: hidden;
+    width: 27.833% !important;
 }
 #sidebar .secondary {
   float: left;
@@ -983,6 +985,19 @@ ul.nav li.current-menu-item > a {
 #sidebar .secondary.last {
   margin: 0;
 }
+
+#sidebar ul, #sidebar ol, #sidebar li {
+	list-style: none;
+}
+
+.layout-left-content #sidebar {
+
+	float: left !important;
+	margin-top: -2.736em;
+	padding: 2.736em 20px 20px !important;
+	background: none repeat scroll 0 0 #EFEDD0;
+  }
+
 /* 2.6 Footer */
 
 .sub-footer {
@@ -1744,7 +1759,7 @@ p.tribe-events-widget-link {
 
 .main-nav-inner .search_main {
 	float: right;
-	width: 32.55%;
+    width: 31.6%;
 	margin-right: 2.08333%;
 }
 
@@ -2880,6 +2895,11 @@ h3.archive_year {
   perspective: 1000;
 }
 
+
+#main {
+    margin-right: 0 !important;
+    width: 62.5% !important;
+}
 
 #post_card {
   width: 100%;
