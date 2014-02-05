@@ -27,10 +27,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 	<div class="sub-footer">
 
+<div class="wrapper">
+
 		<div class="infos">
 			<p class="texto">Fotospot, a galeria online de fotografia autoral.<br />Séries limitadas de fotógrafos consagrados.</p>
 	   		<a class="conheca" href="http://fotospot.com.br/">Conheça</a>
 		</div><!-- infos -->
+</div>
 
 	</div><!-- .sub-footer -->
 

@@ -879,7 +879,7 @@ ul.nav li.current-menu-item > a {
 }
 
 #header .hgroup {
-	width: 65%; 
+	width: 66%; 
 	float: left;
 	zoom: 1;
 }
@@ -957,7 +957,7 @@ ul.nav li.current-menu-item > a {
 }
 
 .header-direita {
-	width: 35%;
+	width: 34%;
 	background: none repeat scroll 0 0 #efedd0;
 	float: left;
 }
@@ -987,7 +987,7 @@ ul.nav li.current-menu-item > a {
 
 .sub-footer {
 	width: 100%;
-	min-height: 285px;
+	min-height: 265px;
 	background-color:#333;
 	color: #FFF;
 	float: left;
@@ -996,7 +996,7 @@ ul.nav li.current-menu-item > a {
 }
 
 .sub-footer .infos {
-	width: 60%;
+	width: 100%;
 	height: auto;
 	padding: 7.5% 0 0 0;
 	margin: 0 auto;
@@ -1005,7 +1005,7 @@ ul.nav li.current-menu-item > a {
 
 .sub-footer .texto {
 	float: left;
-	margin-right: 15%;
+	margin-left: 15%;
 	font-size: 1.5em;
 }
 
@@ -1018,7 +1018,8 @@ ul.nav li.current-menu-item > a {
 	background: #b9d62c;
 	color: #FFF;
 	text-transform: uppercase;
-	margin-top: 2.5%;
+    margin-left: 8%;
+    margin-top: 21px;
 	border-radius: 2px;
 }
 
@@ -1113,8 +1114,8 @@ ul.nav li.current-menu-item > a {
 
 p.tribe-events-widget-link {
     margin-bottom: 0;
-    margin-left: 8%;
-    margin-top: -1.9%;
+    margin-left: 110px;
+    margin-top: -28px;
     position: absolute;
 	font-family: 'Bitter', serif;
 	text-transform: uppercase;
@@ -2858,13 +2859,13 @@ h3.archive_year {
   transition: all 0.4s linear;
 }
 
-.face {
+.card {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 340px;
   backface-visibility: hidden;
 }
-.face.back {
+.card.fundo {
   display: block;
   transform: rotateY(180deg);
   box-sizing: border-box;
@@ -3907,6 +3908,42 @@ img.ui-datepicker-trigger {
 				0 1px 0 hsla(0, 100%, 100%, 1) /*Shadow*/;
 }
 
+/* CSS DO TESTE DE FLIP PARA CHROME*/
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
 /* RESPONSIVE STRUCTURE FROM BRASA*/
-
-

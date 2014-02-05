@@ -35,9 +35,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 <div class="cada-post-home">
 
-	<div id="post_card" class="shadow">
+	<!-- <div id="post_card" class="shadow">
 		 
-		 <div class="front face">
+		 <div class="card"> -->
 				<article <?php post_class('content-cada-post-home'); ?>>
 		        
 		        <div class="thumb">
@@ -64,9 +64,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		        </div><!-- .meta-cada-post-home -->
 
 		        </article><!-- .post -->
-		</div><!-- front face -->
+		<!-- </div> front face -->
 	  	
-		<div class="back face center">
+		<!-- <div class="fundo card"> -->
             <div class="excerpt-home contenthover">
                 <div class="hover-home-content">
                 <a href="<?php the_permalink(); ?>"><span class="dia"><?php the_time('d'); ?></span><span class="mes">/<?php the_date('M'); ?></span></a>
@@ -92,9 +92,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 
             </div><!-- /.excerpt-home -->
 
-	  </div><!-- back face center -->
+	  <!-- </div> back face center -->
 
-	</div><!-- f1_card -->
+	<!-- </div> post_card --> 
 
 </div><!-- /cada-post-home -->
 
@@ -121,6 +121,21 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 		<?php wp_reset_query(); ?>
 
+<!-- TESTE DO FLIP PARA CHROME -->
+<!--
+<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face">
+    <img src="http://dev.brasa.art.br/jornaldafotografia/wp-content/themes/jornaldafotografia//images/bg-header.jpg"/>
+  </div>
+  <div class="back face center">
+    <p>This is nice for exposing more information about an image.</p>
+    <p>Any content can go here.</p>
+  </div>
+</div>
+</div>
+-->
+<!-- FIM DO TESTE DO FLIP PARA CHROME -->
        
 		</div><!-- /#main-home -->
 
