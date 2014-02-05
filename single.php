@@ -41,14 +41,36 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         ?>
             <article <?php post_class(); ?>>
 
+     			<?php if ( has_post_thumbnail() ) {
+		        the_post_thumbnail( 'post-destak' );
+		        }?>
+
+				<div class="clear"></div>
+
+                <div class="category-single">
+                <?php
+                $cada_category = get_the_category();
+                if ( $cada_category ) {
+                echo '<a href="' . get_category_link( $cada_category[0]->term_id ) . '" title="' . sprintf( __( "Veja todos os Artigos em %s" ), $cada_category[0]->name ) . '" ' . '>' . $cada_category[0]->name.'</a> ';
+                }
+                ?>
+                </div><!-- .categories-post -->
+
                 <?php echo woo_embed( 'width=580' ); ?>
                 <?php if ( $settings['thumb_single'] == 'true' && ! woo_embed( '' ) ) { woo_image( 'width=' . $settings['single_w'] . '&height=' . $settings['single_h'] . '&class=thumbnail ' . $settings['thumb_single_align'] ); } ?>
 
                 <header>
 
-                    <h1><?php the_title(); ?></h1>
+                    <h1 class="post-title"><?php the_title(); ?></h1>
 
-                    <?php woo_post_meta(); ?>
+				<div class="data-single">
+             	    <span class="dia"><?php the_time('d'); ?></span>
+					<span class="mes">/<?php the_date('M'); ?></span>
+				</div>
+                <div class="autor-single">Por <?php the_author_posts_link(); ?>
+				</div>
+				
+				<div class="clear"></div>
 
                 </header>
 
