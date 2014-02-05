@@ -35,37 +35,38 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 <div class="cada-post-home">
 
-	<div id="f1_container">
-	<div id="f1_card" class="shadow">
-		  <div class="front face">
-			<article <?php post_class('content-cada-post-home'); ?>>
-            
-            <div class="thumb">
-            <?php if ( has_post_thumbnail() ) {
-            the_post_thumbnail( 'thumb-home' );
-            } else { ?>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-home-default.jpg" alt="<?php the_title(); ?>" />
-            <?php } ?>
-            </div><!-- .thumb -->
-            
-            <header>
-            <h3><?php the_title(); ?></h3>
-            </header>
-			<div class="clear"></div>
-
-            <div class="meta-cada-post-home">
-		        <div class="comments-post">
-			        <?php count_comments('%'); ?>
-		        </div><!-- .comments-post -->
+	<div id="post_card" class="shadow">
+		 
+		 <div class="front face">
+				<article <?php post_class('content-cada-post-home'); ?>>
 		        
-		        <div class="seta-post">
-		        <a href="<?php the_permalink(); ?>"></a>
-		        </div><!-- .seta-post -->
-            </div><!-- .meta-cada-post-home -->
+		        <div class="thumb">
+		        <?php if ( has_post_thumbnail() ) {
+		        the_post_thumbnail( 'thumb-home' );
+		        } else { ?>
+		        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-home-default.jpg" alt="<?php the_title(); ?>" />
+		        <?php } ?>
+		        </div><!-- .thumb -->
+		        
+		        <header>
+		        <h3><?php the_title(); ?></h3>
+		        </header>
+				<div class="clear"></div>
 
-            </article><!-- .post -->
-			</div>
-	  	<div class="back face center">
+		        <div class="meta-cada-post-home">
+				    <div class="comments-post">
+					    <?php count_comments('%'); ?>
+				    </div><!-- .comments-post -->
+				    
+				    <div class="seta-post">
+				    <a href="<?php the_permalink(); ?>"></a>
+				    </div><!-- .seta-post -->
+		        </div><!-- .meta-cada-post-home -->
+
+		        </article><!-- .post -->
+		</div><!-- front face -->
+	  	
+		<div class="back face center">
             <div class="excerpt-home contenthover">
                 <div class="hover-home-content">
                 <a href="<?php the_permalink(); ?>"><span class="dia"><?php the_time('d'); ?></span><span class="mes">/<?php the_date('M'); ?></span></a>
@@ -91,10 +92,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 
             </div><!-- /.excerpt-home -->
 
-	  </div>
+	  </div><!-- back face center -->
 
-</div>
-</div>
+	</div><!-- f1_card -->
 
 </div><!-- /cada-post-home -->
 
