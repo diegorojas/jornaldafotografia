@@ -14,32 +14,24 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 ?>	
 <aside id="sidebar" class="col-right">
 
-	<div class="compartilhe-sidebar">
-	<h2 class="fonte-roxa">Compartilhe!</h2>
-	<div class="compartilhe-sidebar-facebook">
-	<a class="a-compartilhe" href="<?php the_permalink() ?>?share=facebook&nb=1" target="_blank"></a>
-	</div><!-- .compartilhe-sidebar-facebook -->
-	<div class="compartilhe-sidebar-email">
-	<a class="a-compartilhe" href="mailto:<?php echo get_option( 'mo_email' ); ?>" target="_blank"></a>
-	</div><!-- .compartilhe-sidebar-email -->
-	<div class="">
-	</div><!--  -->
-	</div><!-- .compartilhe-sidebar -->
-	
-	<div class="outros-projetos">
-		
-			<h2 class="fonte-roxa">Outros artigos:</h2>
 
-			<div class="setas-outros">
-			<a id="prev3" href="#">
-			<div class="seta-outros-anteriores"><< Anterior </div>
-			</a>
-			<!-- .seta-outros-anteriores -->
-			<a id="next3" href="#">
-			<div class="seta-outros-posteriores">Proximo >></div>
-			</a><!-- .seta-outros-posteriores -->
-			</div><!-- setas-outros -->
-					
+	<div id="compartilhe-sidebar" class="widget">
+		<h2>Compartilhe!</h2>
+		<div class="compartilhe-sidebar-facebook">
+		<a class="a-compartilhe" href="<?php the_permalink() ?>?share=facebook&nb=1" target="_blank"></a>
+		</div><!-- .compartilhe-sidebar-facebook -->
+		<div class="compartilhe-sidebar-twitter">
+		<a class="a-compartilhe" href="<?php the_permalink() ?>?share=facebook&nb=1" target="_blank"></a>
+		</div><!-- .compartilhe-sidebar-twitter -->
+		<div class="compartilhe-sidebar-email">
+		<a class="a-compartilhe" href="#" target="_blank"></a>
+		</div><!-- .compartilhe-sidebar-email -->
+	</div><!-- #compartilhe-sidebar -->
+	
+	<div id="outros-projetos" class="widget">
+		
+			<h2>Outros artigos:</h2>
+				
 		<div class="outros-slider">
 		
 			<div class="list_carousel">
@@ -74,6 +66,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 						   <!-- show 404 error here -->
 					<?php endif; ?>
 				</ul>
+
+			<div class="setas-outros">
+			<a id="prev3" href="#">
+			<div class="seta-outros-anteriores"><< Anterior </div>
+			</a>
+			<!-- .seta-outros-anteriores -->
+			<a id="next3" href="#">
+			<div class="seta-outros-posteriores">Proximo >></div>
+			</a><!-- .seta-outros-posteriores -->
+			</div><!-- setas-outros -->
 				
 				<?php wp_reset_query(); // reset query ?>
 					
@@ -81,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 		</div><!-- .outros-slider -->
 						
-	</div><!-- .outros-projetos -->
+	</div><!-- #outros-projetos -->
 
 	<?php woo_sidebar_inside_before(); ?>
 

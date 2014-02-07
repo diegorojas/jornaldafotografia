@@ -535,7 +535,7 @@ h6 {
   font-family: "Bitter", serif;
   color: #474747;
   margin: 0 0 .618em;
-  font-weight: 700;
+  font-weight: 500;
 }
 h1 a,
 h2 a,
@@ -560,12 +560,12 @@ h1,
 }
 h2,
 .beta {
-  font-size: 1.618em;
+  font-size: 1.418em !important;
   line-height: 1.416em;
 }
 h3,
 .gamma {
-  font-size: 1.416em;
+  font-size: 1.216em !important;
 }
 h4 {
   font-size: 1em;
@@ -4123,7 +4123,7 @@ img.ui-datepicker-trigger {
 
 .caroufredsel_wrapper {
 	width: 100% !important;
-	min-height: 500px !important;
+	min-height: 300px;
 	left: 0 !important;
 	right: 0 !important;
 }
@@ -4143,7 +4143,7 @@ img.ui-datepicker-trigger {
 ul#carousel li {
 	display: block;
 	float: left;
-	height: 500px;
+	height: 300px;
 	margin: 0 3px;
 	max-width: 900px;
 	position: relative;
@@ -4167,14 +4167,14 @@ ul#carousel li .content.center {
 }
 
 .cada-slide {
-	max-height: 500px;
+	max-height: 300px;
     overflow: hidden;
 	width: auto;vai querer noticias na home mesmo?
 }
 
 
 #carousel_wrap {
-	height: 500px;
+	height: 300px;
 	left: 0;
 	overflow: hidden;
 	position: relative;
@@ -4248,30 +4248,86 @@ body.single-projects #carousel_wrap { margin: 15px 0 30px }
 }
 
 
-.outros-projetos {
+#outros-projetos {
     margin-top: 1.5em;
+	margin-bottom: 2.236em !important;
     overflow: hidden;
-    width: 300px;
+    background: none repeat scroll 0 0 #f7f7f7;
 }
 
 
 .setas-outros {
     float: left;
-    width: 100%;
+	width: 100%;
+	margin-bottom: 2%;
 }
 
-.seta-barra {
-	background: url("images/setas-outros.png") no-repeat scroll 4px -36px transparent;
-	width: 50px;
+.setas-outros a {
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'Bitter', serif;
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
+.seta-outros-anteriores {
+    background-color: #C8D66A;
+    width: 34%;
+	margin-right: 2%;
+	float: left;
+	padding: 7px 20px;
+}
+.seta-outros-posteriores {
+    background-color: #C8D66A;
+    width: 34%;
+	float: left;
+	padding: 7px 20px;
+}
+.seta-outros-posteriores:hover, .seta-outros-anteriores:hover {
+    background-color: #8FA32E;
 }
 
 .outros-slider {
-    background: none repeat scroll 0 0 #E3E3E3;
     float: left;
-    height: 270px;
-    max-width: 300px;
     width: 100%;
 }
 
+.outros-slider .cada-outro-projeto {
+    margin: 0;
+	padding:0;
+}
 
+.thumb-outro-projeto {
+    height: 200px;
+    overflow: hidden;
+    width: 300px;
 
+}
+
+.outros-slider a {
+    text-decoration: none;
+}
+
+.titulo-outros-projetos {
+    color: #222222;
+    height: auto;
+    padding: 5px 0;
+    width: auto;
+    font-family: 'Bitter',serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin:0;
+}
+
+.data-cada-outro-projeto {
+    color: #666666;
+    display: block;
+    line-height: 1.2;
+    margin: 10px 10px 0 0;
+}
+
+#sidebar .widget {
+    background: none repeat scroll 0 0 #f7f7f7;
+    padding: 15px 14px 5px;
+	margin-bottom: 2.236em !important;
+}

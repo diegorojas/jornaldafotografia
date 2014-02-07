@@ -130,4 +130,4 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
     </div><!-- #content -->
 
-<?php get_footer(); ?>
+<?php get_footer('single'); ?>
