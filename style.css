@@ -998,6 +998,34 @@ ul.nav li.current-menu-item > a {
 	background: none repeat scroll 0 0 #EFEDD0;
   }
 
+
+ul.links-nav-post {
+
+    font-family: 'Bitter',serif;
+    font-size: 1em;
+    font-weight: bold;
+	margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+ul.links-nav-post li {
+ background: none repeat scroll 0 0 #efedd0;
+	padding: 12px 20px;
+    color: #5a5a5a;	
+	margin-bottom: 10px;
+}
+ul.links-nav-post li:hover {
+	background: url("images/seta-branca.png") no-repeat scroll 240px 18px #B9D62C;
+	color: #FFFFFF;
+}
+
+
+ul.links-nav-post li:hover {
+    color: #FFFFFF;	
+	text-decoration: none;
+}
+
 /* 2.6 Footer */
 
 .sub-footer {

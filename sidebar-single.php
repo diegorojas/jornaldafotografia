@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 
 	<div id="compartilhe-sidebar" class="widget">
-		<h2>Compartilhe!</h2>
+		<h2>Compartilhe</h2>
 		<div class="compartilhe-sidebar-facebook">
 		<a class="a-compartilhe" href="<?php the_permalink() ?>?share=facebook&nb=1" target="_blank"></a>
 		</div><!-- .compartilhe-sidebar-facebook -->
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	
 	<div id="outros-projetos" class="widget">
 		
-			<h2>Outros artigos:</h2>
+			<h2>Leia outro artigo:</h2>
 				
 		<div class="outros-slider">
 		
@@ -84,6 +84,21 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		</div><!-- .outros-slider -->
 						
 	</div><!-- #outros-projetos -->
+
+
+	<div id="navegue-no-post" class="widget">
+		
+			<h2>Navegue neste artigo</h2>
+
+		<ul class="links-nav-post">
+			<a href="#"><li>Topo</li></a>
+			<a href="#"><li>Vídeo</li></a>
+			<a href="#"><li>Galeria de Fotos</li></a>
+			<a href="#"><li>Sobre o Autor</li></a>
+			<a href="#"><li>Comentários</li></a>
+		</ul>
+				
+	</div>
 
 	<?php woo_sidebar_inside_before(); ?>
 
