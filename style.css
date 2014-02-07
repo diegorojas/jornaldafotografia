@@ -4043,3 +4043,222 @@ img.ui-datepicker-trigger {
 }
 
 /* RESPONSIVE STRUCTURE FROM BRASA*/
+
+
+
+/* Galeria Carousel do Plugin (Necessária)
+----------------------------------------------- */
+.list_carousel {
+    overflow: hidden;
+	width: 100%;
+	position: relative;
+	clear: left;
+}
+
+.list_carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.list_carousel li {
+    font-size: 14px;
+    color: #333;
+    width: auto;
+	height: auto;
+	overflow: hidden;
+    padding: 0;
+    margin: 0 1px 0 1px;
+    display: block;
+    float: left;
+	background: url(images/loader.gif) 20px 20px no-repeat;
+	position: relative;
+}
+
+
+.list_carousel li img {
+	width: 100%;
+}
+
+
+
+.list_carousel.responsive {
+    width: auto;
+    margin-left: 0;
+}
+
+
+.list_carousel .clearfix {
+
+    float: none;
+    clear: both;
+
+}
+
+.list_carousel a.prev {
+
+    background: url("images/setas.png") no-repeat scroll -5px center transparent;
+    display: block;
+    min-height: 70px;
+	position: absolute;
+    top: 40%;
+    width: 70px;
+	z-index: 50;
+
+}
+
+.list_carousel a.next {
+    background: url("images/setas.png") no-repeat scroll -75px center transparent;
+	display: block;
+	min-height: 70px;
+    position: absolute;
+    top: 40%;
+    width: 70px;
+	z-index: 50;
+	/* add */
+	right: 0;
+
+}
+
+.caroufredsel_wrapper {
+	width: 100% !important;
+	min-height: 500px !important;
+	left: 0 !important;
+	right: 0 !important;
+}
+.caroufredsel_wrapper ul {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.list_carousel a.prev.disabled, a.next.disabled {
+    cursor: default;
+}
+.list_carousel a.prev span, a.next span {
+    display: none;
+}
+
+/* carousel do projeto em questão*/
+
+ul#carousel li {
+	display: block;
+	float: left;
+	height: 500px;
+	margin: 0 3px;
+	max-width: 900px;
+	position: relative;
+    text-align: center;
+    overflow: hidden;
+	min-width: 300px;
+}
+
+ul#carousel li .content {
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+}
+ul#carousel li .content > div {
+	padding: 30px;
+}
+ul#carousel li .content p { margin-bottom: 0; }
+
+ul#carousel li .content.center {
+	bottom: 40%;
+	text-align: center;
+}
+
+.cada-slide {
+	max-height: 500px;
+    overflow: hidden;
+	width: auto;vai querer noticias na home mesmo?
+}
+
+
+#carousel_wrap {
+	height: 500px;
+	left: 0;
+	overflow: hidden;
+	position: relative;
+
+}
+
+body.single-projects #carousel_wrap { margin: 15px 0 30px }
+
+
+#carousel_wrap { list-style:none; }
+#carousel_wrap li { float:left; display:block; padding:0;
+ }
+
+#carousel_wrap li a { display:block; padding:0; }
+#carousel_wrap img { margin:0; padding:0;
+					}
+
+#carousel_wrap a.prev {
+    background: url("images/setas.png") no-repeat scroll -5px center transparent;
+    display: block;
+    min-height: 70px;
+	position: absolute;
+    top: 40%;
+    width: 70px;
+	z-index: 50;
+	text-indent: -200px;
+}
+
+#carousel_wrap a.next {
+    background: url("images/setas.png") no-repeat scroll -75px center transparent;
+	display: block;
+	min-height: 70px;
+    position: absolute;
+    top: 40%;
+    width: 70px;
+	z-index: 50;
+	right: 0;
+	text-indent: -200px;
+}
+
+
+
+.bottom-left, .bottom-right { bottom: 1px; max-width: 50% }
+.bottom-left { left: 1px; text-align: left; }
+.bottom-right { right: 1px; text-align: right; }
+
+.carousel_nav {
+	/* background-color: rgba(255, 255, 255, 0.5); */
+	height: 700px;
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+
+
+#foo2 {
+    /*left: 20px;*/
+    margin: 0 2px;
+    position: relative;
+}
+
+#desc-slide {
+	color: #FFF;
+	background: none repeat scroll 0 0 #000;
+    bottom: 0;
+    left: 70px;
+    padding: 20px;
+    position: absolute;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+}
+
+.seta-barra {
+	background: url("images/setas-outros.png") no-repeat scroll 4px -36px transparent;
+	width: 50px;
+}
+
+.outros-slider {
+    background: none repeat scroll 0 0 #E3E3E3;
+    float: left;
+    height: 270px;
+    max-width: 300px;
+    width: 100%;
+}
+
+
+
