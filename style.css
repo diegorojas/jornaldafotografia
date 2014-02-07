@@ -1026,6 +1026,12 @@ ul.links-nav-post li:hover {
 	text-decoration: none;
 }
 
+#navegue-no-post {
+	position: fixed;
+    right: 0;
+    top: 200px;
+}
+
 /* 2.6 Footer */
 
 .sub-footer {

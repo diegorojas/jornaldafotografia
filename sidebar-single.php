@@ -91,11 +91,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			<h2>Navegue neste artigo</h2>
 
 		<ul class="links-nav-post">
-			<a href="#"><li>Topo</li></a>
-			<a href="#"><li>Vídeo</li></a>
-			<a href="#"><li>Galeria de Fotos</li></a>
-			<a href="#"><li>Sobre o Autor</li></a>
-			<a href="#"><li>Comentários</li></a>
+			<a href="javascript:scroll_to('#header');"><li>Topo</li></a>
+			<a href="javascript:scroll_to('iframe');"><li>Vídeo</li></a>
+			<a href="javascript:scroll_to('.gallery');"><li>Galeria de Fotos</li></a>
+			<a href="javascript:scroll_to('#post-author');"><li>Sobre o Autor</li></a>
+			<a href="javascript:scroll_to('#comments');"><li>Comentários</li></a>
 		</ul>
 				
 	</div>
