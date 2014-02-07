@@ -29,6 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	<div class="outros-projetos">
 		
 			<h2 class="fonte-roxa">Outros artigos:</h2>
+
 			<div class="setas-outros">
 			<a id="prev3" href="#">
 			<div class="seta-outros-anteriores"><< Anterior </div>
@@ -38,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			<div class="seta-outros-posteriores">Proximo >></div>
 			</a><!-- .seta-outros-posteriores -->
 			</div><!-- setas-outros -->
-		
+					
 		<div class="outros-slider">
 		
 			<div class="list_carousel">
@@ -51,20 +52,19 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 						   <?php while ( $query->have_posts() ) : $query->the_post(); ?> 				
 					<li>
                     <a class="a-outro" href="<?php the_permalink(); ?>">
-					<div class="cada-outro-projeto">
+						<div class="cada-outro-projeto">
 
-					 <div class="thumb-outro-projeto">
-						<?php if ( has_post_thumbnail() ) {
-						the_post_thumbnail( 'thumb-home' );
-						} else { ?>
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-home-default.jpg" alt="<?php the_title(); ?>" />
-						<?php } ?>
-					</div><!-- .thumb-outro-projeto -->
-                        
-					</div><!-- .cada-outro-projeto -->
+							 <div class="thumb-outro-projeto">
+								<?php if ( has_post_thumbnail() ) {
+								the_post_thumbnail( 'thumb-home' );
+								} else { ?>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-home-default.jpg" alt="<?php the_title(); ?>" />
+								<?php } ?>
+							</div><!-- .thumb-outro-projeto -->
+		                    
+						</div><!-- .cada-outro-projeto -->
 					<div class="titulo-outros-projetos">
 					 <?php the_title(); ?><br />
-
 					</div><!-- .titulo-outros-projetos -->
                     </a><!-- .a-outro  -->		
 					</li>
@@ -76,13 +76,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				</ul>
 				
 				<?php wp_reset_query(); // reset query ?>
-				<div class="clearfix"></div>
 					
 			</div> <!-- .list_carrousel -->
-					
 
 		</div><!-- .outros-slider -->
-		
+						
 	</div><!-- .outros-projetos -->
 
 	<?php woo_sidebar_inside_before(); ?>

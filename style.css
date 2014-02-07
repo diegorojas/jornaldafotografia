@@ -4247,6 +4247,19 @@ body.single-projects #carousel_wrap { margin: 15px 0 30px }
 	opacity: 0.6;
 }
 
+
+.outros-projetos {
+    margin-top: 1.5em;
+    overflow: hidden;
+    width: 300px;
+}
+
+
+.setas-outros {
+    float: left;
+    width: 100%;
+}
+
 .seta-barra {
 	background: url("images/setas-outros.png") no-repeat scroll 4px -36px transparent;
 	width: 50px;

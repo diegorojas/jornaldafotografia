@@ -33,8 +33,8 @@ function count_comments() {
 		wp_enqueue_script( 'jquery.contenthover', get_stylesheet_directory_uri() . '/includes/js/jquery.contenthover.js', array( 'jquery' ) );
 		wp_enqueue_script( 'custom-contenthover', get_stylesheet_directory_uri() . '/includes/js/custom-contenthover.js', array( 'jquery.contenthover' ) );
 
-    wp_enqueue_script( 'caroufredsel', get_template_directory_uri() . '/includes/js/jquery.carouFredSel-6.2.1-packed.js', array('jquery') );
-    wp_enqueue_script( 'caroufredsel_pre', get_template_directory_uri() . '/includes/js/caroufredsel_pre.js', array('caroufredsel') );
+    wp_enqueue_script( 'caroufredsel', get_stylesheet_directory_uri() . '/includes/js/jquery.carouFredSel-6.2.1-packed.js', array('jquery') );
+    wp_enqueue_script( 'caroufredsel_pre', get_stylesheet_directory_uri() . '/includes/js/caroufredsel_pre.js', array('caroufredsel') );
 
 
 /*-----------------------------------------------------------------------------------*/
