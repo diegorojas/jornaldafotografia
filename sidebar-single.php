@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 <aside id="sidebar" class="col-right">
 
 	<div class="compartilhe-sidebar">
-	<h2 class="fonte-roxa">compartilhe!</h2>
+	<h2 class="fonte-roxa">Compartilhe!</h2>
 	<div class="compartilhe-sidebar-facebook">
 	<a class="a-compartilhe" href="<?php the_permalink() ?>?share=facebook&nb=1" target="_blank"></a>
 	</div><!-- .compartilhe-sidebar-facebook -->
@@ -28,13 +28,15 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	
 	<div class="outros-projetos">
 		
-			<h2 class="fonte-roxa">outros projetos:</h2>
+			<h2 class="fonte-roxa">Outros artigos:</h2>
 			<div class="setas-outros">
-			<a id="prev3" href="#"><div class="seta-outros-anteriores">
-			</div></a>
+			<a id="prev3" href="#">
+			<div class="seta-outros-anteriores"><< Anterior </div>
+			</a>
 			<!-- .seta-outros-anteriores -->
-			<a id="next3" href="#"><div class="seta-outros-posteriores">
-			</div></a><!-- .seta-outros-posteriores -->
+			<a id="next3" href="#">
+			<div class="seta-outros-posteriores">Proximo >></div>
+			</a><!-- .seta-outros-posteriores -->
 			</div><!-- setas-outros -->
 		
 		<div class="outros-slider">
@@ -43,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				<ul id="foo3">
 					<?php
 					$esse_id = array(get_the_ID());
-					$query = new WP_Query( array( 'post_type' => 'posts', 'orderby' => 'rand', 'post__not_in' => $esse_id ) );
+					$query = new WP_Query( array( 'post_type' => 'post', 'orderby' => 'ASC', 'post__not_in' => $esse_id ) );
 
 					if ( $query->have_posts() ) : ?>
 						   <?php while ( $query->have_posts() ) : $query->the_post(); ?> 				
@@ -51,26 +53,18 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                     <a class="a-outro" href="<?php the_permalink(); ?>">
 					<div class="cada-outro-projeto">
 
-					 <div class="thumb">
+					 <div class="thumb-outro-projeto">
 						<?php if ( has_post_thumbnail() ) {
 						the_post_thumbnail( 'thumb-home' );
 						} else { ?>
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-home-default.jpg" alt="<?php the_title(); ?>" />
 						<?php } ?>
-					</div><!-- .thumb -->
+					</div><!-- .thumb-outro-projeto -->
                         
 					</div><!-- .cada-outro-projeto -->
 					<div class="titulo-outros-projetos">
 					 <?php the_title(); ?><br />
-								<?php
-								// Pega os dados e salva em variáveis
-								$metaportfolio_2alinhatitulo = get_post_meta($post->ID,'metaportfolio_2alinhatitulo',TRUE);
-								?>
-								<?php if (empty($metaportfolio_2alinhatitulo)) {
-								} else { ?>
-									  <?php echo $metaportfolio_2alinhatitulo; ?>
-								<?php }	?>
-					<span class="data-cada-outro-projeto"><?php the_time( 'Y' ); ?></span>
+
 					</div><!-- .titulo-outros-projetos -->
                     </a><!-- .a-outro  -->		
 					</li>
