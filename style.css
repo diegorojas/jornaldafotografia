@@ -4100,16 +4100,8 @@ img.ui-datepicker-trigger {
     margin: 0 1px 0 1px;
     display: block;
     float: left;
-	background: url(images/loader.gif) 20px 20px no-repeat;
 	position: relative;
 }
-
-
-.list_carousel li img {
-	width: 100%;
-}
-
-
 
 .list_carousel.responsive {
     width: auto;
@@ -4151,7 +4143,7 @@ img.ui-datepicker-trigger {
 
 .caroufredsel_wrapper {
 	width: 100% !important;
-	min-height: 300px;
+	min-height: 270px;
 	left: 0 !important;
 	right: 0 !important;
 }
@@ -4323,12 +4315,13 @@ body.single-projects #carousel_wrap { margin: 15px 0 30px }
 .outros-slider .cada-outro-projeto {
     margin: 0;
 	padding:0;
+    overflow: hidden;
+	height: 165px;
 }
 
 .thumb-outro-projeto {
-    height: 200px;
-    overflow: hidden;
-    width: 300px;
+    height: 200px
+    width: 100%;
 
 }
 
