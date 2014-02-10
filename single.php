@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @package WooFramework
  * @subpackage Template
  */
-    get_header();
+    get_header('testes');
     global $woo_options;
 
 /**

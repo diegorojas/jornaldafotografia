@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @package WooFramework
  * @subpackage Template
  */
-	get_header();
+	get_header('testes');
 	global $woo_options;
 ?>
        
@@ -121,6 +121,19 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 		<?php wp_reset_query(); ?>
 
+
+	<div id="barralateral">
+
+		<div id="navegue-no-post">
+
+			Sidebar Content
+
+		</div>
+
+	</div>
+
+
+
 <!-- TESTE DO FLIP PARA CHROME -->
 
 <div id="f1_container">
@@ -138,6 +151,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 <p align="center"> Para visualizar o Demo de onde tiramos o código <a href="http://css3.bradshawenterprises.com/flip/" target="_blank">acesse aqui</a></p>
 
 <!-- FIM DO TESTE DO FLIP PARA CHROME -->
+
        
 		</div><!-- /#main-home -->
 

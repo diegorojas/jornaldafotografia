@@ -85,8 +85,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 						
 	</div><!-- #outros-projetos -->
 
+	<div id="barralateral">
 
-	<div id="navegue-no-post" class="widget">
+
+	<div id="navegue-no-post">
 		
 			<h2>Navegue neste artigo</h2>
 
@@ -100,6 +102,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				
 	</div>
 
+	</div>
+
 	<?php woo_sidebar_inside_before(); ?>
 
 	<?php if ( woo_active_sidebar( 'primary' ) ) { ?>
@@ -108,6 +112,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	</div>        
 	<?php } // End IF Statement ?>  
 	<?php woo_sidebar_inside_after(); ?> 
+
 	
 </aside><!-- /#sidebar -->
 <?php } // End IF Statement ?>
