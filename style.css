@@ -1578,17 +1578,18 @@ p.tribe-events-widget-link {
 }
 /* 3.3 Single Post Author */
 #post-author {
-  clear: both;
-  display: block;
-  width: 95%;
-  margin-left: 2.875%;
-  margin-right: -3.125%;
-  *width: 106.19791666666667%;
-  *margin-left: -3.1770833333333335%;
-  *margin-right: -3.1770833333333335%;
-  *zoom: 1;
-  margin-bottom: 2.618em;
-  margin-top: 35px;
+	background: #FFF;
+	clear: both;
+	display: block;
+	width: 95%;
+	margin-left: 2.875%;
+	margin-right: -3.125%;
+	*width: 106.19791666666667%;
+	*margin-left: -3.1770833333333335%;
+	*margin-right: -3.1770833333333335%;
+	*zoom: 1;
+	margin-bottom: 2.618em;
+	margin-top: 35px;
 }
 #post-author:after {
   content: "\0020";
@@ -2406,7 +2407,15 @@ p.tribe-events-widget-link {
 /*-------------------------------------------------------------------------------------------*/
 /* 5.1 Comments */
 #comments {
-  clear: both;
+	clear: both;
+	width: 95%;
+	margin-left: 2.875%;
+	margin-right: -3.125%;
+}
+.number-comments {
+	margin: 0 10px 0 0;
+	color: #999;
+	font-weight: lighter;
 }
 #comments .nocomments {
   padding: 1em 1em 1em 3.706em;
@@ -2494,14 +2503,14 @@ p.tribe-events-widget-link {
   clear: both;
 }
 #comments .commentlist > li.comment .avatar {
-  display: inline;
-  float: left;
-  width: 6.25%;
-  margin-left: 3.125%;
-  margin-right: 3.125%;
-  *width: 6.197916666666667%;
-  *margin-left: 3.0729166666666665%;
-  *margin-right: 3.0729166666666665%;
+	display: inline;
+	float: left;
+	margin-left: 2.295%;
+	margin-right: 0;
+	width: 7%;
+	*width: 6.197916666666667%;
+	*margin-left: 3.0729166666666665%;
+	*margin-right: 3.0729166666666665%;
 }
 #comments .commentlist > li.comment .avatar img {
   width: 100%;
@@ -2550,8 +2559,22 @@ p.tribe-events-widget-link {
   font-weight: normal;
   line-height: 1em;
   width: 1em;
-  content: "\f007";
 }
+
+#comments .name {
+	font-size: 1.216em;
+	font-family: "Bitter",serif;
+	color: #B9D532; /* Verde claro */
+}
+
+#comments .edit {
+	display: none;
+}
+
+#comments .commentlist > li.comment .comment-text .comment-head .name b, #comments .commentlist > li.comment .comment-text .comment-head .name br {
+	display: none;
+}
+
 #comments .commentlist > li.comment .comment-text .comment-head a.comment-reply-link:before {
   font-family: 'FontAwesome';
   display: inline-block;
@@ -2642,12 +2665,22 @@ p.tribe-events-widget-link {
   padding: 0;
 }
 /* 5.2 Comments Form */
+#respond {
+	width: 95%;
+	margin-top: 20px;
+	margin-left: 3.875%;
+	margin-right: -3.125%;
+}
+#cancel-comment-reply-link {
+	font-size: 0.6em;
+	color: #888;
+}
 #respond label {
   color: #616161;
 }
 #respond #reply-title small {
   display: block;
-  margin: 0 0 1.618em;
+  margin: 0 0 1.018em;
 }
 #respond #commentform .comment-form-author,
 #respond #commentform .comment-form-email,
@@ -2665,6 +2698,8 @@ p.tribe-events-widget-link {
 #respond #commentform input.txt,
 #respond #commentform textarea {
   width: 100%;
+  border: 1px solid #CCC;
+  margin: 20px 0 0 0;
 }
 /* 5.3 Pingbacks / Trackbacks */
 .pinglist li {

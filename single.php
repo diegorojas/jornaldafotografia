@@ -79,12 +79,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                     <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'woothemes' ), 'after' => '</div>' ) ); ?>
                 </section>
 
-                <footer class="post-more">
-                    <span class="comments"><?php comments_popup_link( __( 'Leave a comment', 'woothemes' ), __( '1 Comment', 'woothemes' ), __( '% Comments', 'woothemes' ) ); ?></span>
-
-                    <?php the_tags( '<p class="tags">'.__( 'Tags: ', 'woothemes' ), ', ', '</p>' ); ?>
-                </footer>
-
             </article><!-- .post -->
             
             
@@ -157,10 +151,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
                 <?php woo_subscribe_connect(); ?>
 
-            <nav id="post-entries" class="fix">
-                <div class="nav-prev fl"><?php previous_post_link( '%link', '%title' ); ?></div>
-                <div class="nav-next fr"><?php next_post_link( '%link', '%title' ); ?></div>
-            </nav><!-- #post-entries -->
             <?php
                 // Determine wether or not to display comments here, based on "Theme Options".
                 if ( isset( $woo_options['woo_comments'] ) && in_array( $woo_options['woo_comments'], array( 'post', 'both' ) ) ) {
