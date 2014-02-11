@@ -14,8 +14,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 ?>	
 <aside id="sidebar" class="col-right">
 
-	<div id="barralateral">
-
 
 	<div id="compartilhe-sidebar" class="widget">
 		<h2>Compartilhe</h2>
@@ -88,7 +86,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	</div><!-- #outros-projetos -->
 
 
-	<div id="sidebar-fixed" class="widget">
+	<div id="nav-no-post" class="widget">
 		
 			<h2>Navegue neste artigo</h2>
 
@@ -102,7 +100,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				
 	</div>
 
-	</div>
 
 	<?php woo_sidebar_inside_after(); ?> 
 

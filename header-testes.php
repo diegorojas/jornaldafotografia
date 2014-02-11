@@ -54,23 +54,23 @@ woo_head();
 <script type="text/javascript">
 jQuery(document).ready(function () {
 
-    var length = jQuery('#sidebar-fixed').height() - jQuery('#barralateral').height() + jQuery('#sidebar-fixed').offset().top;
+    var length = jQuery('#left').height() - jQuery('#sidebar').height() + jQuery('#left').offset().top;
 
     jQuery(window).scroll(function () {
 
         var scroll = jQuery(this).scrollTop();
-        var height = jQuery('#barralateral').height() + 'px';
+        var height = jQuery('#sidebar').height() + 'px';
 
-        if (scroll < jQuery('#barralateral').offset().top) {
+        if (scroll < jQuery('#left').offset().top) {
 
-            jQuery('#barralateral').css({
+            jQuery('#sidebar').css({
                 'position': 'absolute',
                 'top': '0'
             });
 
         } else if (scroll > length) {
 
-            jQuery('#barralateral').css({
+            jQuery('#sidebar').css({
                 'position': 'absolute',
                 'bottom': '0',
                 'top': 'auto'
@@ -78,7 +78,7 @@ jQuery(document).ready(function () {
 
         } else {
 
-            jQuery('#sidebar-fixed').css({
+            jQuery('#sidebar').css({
                 'position': 'fixed',
                 'top': '0',
                 'height': height
@@ -86,6 +86,7 @@ jQuery(document).ready(function () {
         }
     });
 });
+
 </script>
 </head>
 <body <?php body_class(); ?>>

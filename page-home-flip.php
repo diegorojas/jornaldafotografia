@@ -122,15 +122,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		<?php wp_reset_query(); ?>
 
 
-	<div id="sidebar">
+	<div id="left">
 
-		<div id="barralateral">
+		<div id="sidebar">
 
 			Sidebar Content
 
 		</div>
 
 	</div>
+
 
 
 
