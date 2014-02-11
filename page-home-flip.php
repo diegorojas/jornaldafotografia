@@ -122,9 +122,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		<?php wp_reset_query(); ?>
 
 
-	<div id="barralateral">
+	<div id="sidebar">
 
-		<div id="navegue-no-post">
+		<div id="barralateral">
 
 			Sidebar Content
 
