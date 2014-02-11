@@ -14,22 +14,36 @@ jQuery(function() {
 });
 	
 	
-		jQuery('#foo3').carouFredSel({
-		prev: '#prev3',
-		next: '#next3',
-		auto: {
-			play: false,
-		},
-		circular: true,
-		infinite: true,
-		responsive: true,
-		direction: 'left',
-		width: 'null', // automatically calculated
-		height: 'null', // automatically calculated
-		align: 'center',
-		items: {
-			visible: 1,
-			start: 'random'
-		}
-	});
+jQuery('#foo3').carouFredSel({
+	prev: '#prev3',
+	next: '#next3',
+	auto: {
+		play: false,
+	},
+	circular: true,
+	infinite: true,
+	responsive: true,
+	direction: 'left',
+	width: 'null', // automatically calculated
+	height: 'null', // automatically calculated
+	align: 'center',
+	items: {
+		visible: 1,
+		start: 'random'
+	}
+});
+
+jQuery('#foo2').carouFredSel({
+	prev: '#prev2',
+	next: '#next2',
+	auto: {
+		play: true,
+	},
+	responsive: true,
+	direction: 'left',
+	items: {
+		visible: 1,
+	}
+});
+
 });
