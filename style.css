@@ -1580,14 +1580,15 @@ p.tribe-events-widget-link {
 #post-author {
   clear: both;
   display: block;
-  width: 106.25%;
-  margin-left: -3.125%;
+  width: 95%;
+  margin-left: 2.875%;
   margin-right: -3.125%;
   *width: 106.19791666666667%;
   *margin-left: -3.1770833333333335%;
   *margin-right: -3.1770833333333335%;
   *zoom: 1;
   margin-bottom: 2.618em;
+  margin-top: 35px;
 }
 #post-author:after {
   content: "\0020";
@@ -1608,6 +1609,7 @@ p.tribe-events-widget-link {
   display: inline;
   float: left;
   width: 18.75%;
+  margin-top: 10px;
   margin-left: 3.125%;
   margin-right: 3.125%;
   *width: 18.697916666666668%;
@@ -1621,12 +1623,19 @@ p.tribe-events-widget-link {
 #post-author .profile-content {
   display: inline;
   float: left;
+  margin-top: 10px;
+  margin-bottom: 25px;
   width: 68.75%;
   margin-left: 3.125%;
   margin-right: 3.125%;
   *width: 68.69791666666667%;
   *margin-left: 3.0729166666666665%;
   *margin-right: 3.0729166666666665%;
+  color: #424242;
+}
+#post-author h3.title {
+    margin: 15px 0 0 25px;
+    width: 95%;
 }
 /* 3.4 Post Entry Nav */
 #post-entries {
