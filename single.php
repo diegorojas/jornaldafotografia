@@ -140,9 +140,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
                 <?php if ( isset( $woo_options['woo_post_author'] ) && $woo_options['woo_post_author'] == 'true' ) { ?>
                 
                 <aside id="post-author" class="fix">
-                <h3 class="title"><?php printf( esc_attr__( 'About %s', 'woothemes' ), get_the_author() ); ?></h3>
+                <h3 class="title"><?php printf( esc_attr__( 'About the Author', 'woothemes' ), get_the_author() ); ?></h3>
                     <div class="profile-image"><?php echo get_avatar( get_the_author_meta( 'ID' ), '300' ); ?></div>
                     <div class="profile-content">
+                    	<span class="name-author"><?php echo get_the_author(); ?></span><br />
                         <?php the_author_meta( 'description' ); ?>
                         <div class="profile-link">
                             <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">

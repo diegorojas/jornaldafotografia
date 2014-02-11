@@ -1636,6 +1636,17 @@ p.tribe-events-widget-link {
 #post-author h3.title {
     margin: 15px 0 0 25px;
     width: 95%;
+	color: #B9D532; /* Verde claro */
+}
+.profile-link {
+	margin: 10px 0;
+}
+.profile-link a {
+	float: right;
+}
+.name-author {
+	font-size: 1.216em;
+	font-family: "Bitter",serif;
 }
 /* 3.4 Post Entry Nav */
 #post-entries {

@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 	?></title>
 <?php woo_meta(); ?>
-<!-- <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'> -->
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
 <link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>" />
 <?php
 wp_head();
