@@ -12,8 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	
 	if ( isset( $woo_options['woo_layout'] ) && ( $woo_options['woo_layout'] != 'layout-full' ) ) {
 ?>	
+
 <aside id="sidebar" class="col-right">
 
+<div id="sidebarcontent">
 
 	<div id="compartilhe-sidebar" class="widget">
 		<h2>Compartilhe</h2>
@@ -86,6 +88,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	</div><!-- #outros-projetos -->
 
 
+		<div id="fixedscrollbox">
+
 	<div id="nav-no-post" class="widget">
 		
 			<h2>Navegue neste artigo</h2>
@@ -100,10 +104,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				
 	</div>
 
+	</div> <!-- fixedscrollbox -->
 
 	<?php woo_sidebar_inside_after(); ?> 
 
-	
-</aside><!-- /#sidebar -->
+</div> <!-- sidebarcontent -->
+
+</aside> <!-- sidebar -->
+
 <?php } // End IF Statement ?>
 	

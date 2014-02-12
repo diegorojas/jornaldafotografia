@@ -54,23 +54,23 @@ woo_head();
 <script type="text/javascript">
 jQuery(document).ready(function () {
 
-    var length = jQuery('#left').height() - jQuery('#sidebar').height() + jQuery('#left').offset().top;
+    var length = jQuery('#sidebarcontent').height() - jQuery('#fixedscrollbox').height() + jQuery('#sidebarcontent').offset().top;
 
     jQuery(window).scroll(function () {
 
         var scroll = jQuery(this).scrollTop();
-        var height = jQuery('#sidebar').height() + 'px';
+        var height = jQuery('#fixedscrollbox').height() + 'px';
 
-        if (scroll < jQuery('#left').offset().top) {
+        if (scroll < jQuery('#sidebarcontent').offset().top) {
 
-            jQuery('#sidebar').css({
+            jQuery('#fixedscrollbox').css({
                 'position': 'absolute',
                 'top': '0'
             });
 
         } else if (scroll > length) {
 
-            jQuery('#sidebar').css({
+            jQuery('#fixedscrollbox').css({
                 'position': 'absolute',
                 'bottom': '0',
                 'top': 'auto'
@@ -78,7 +78,7 @@ jQuery(document).ready(function () {
 
         } else {
 
-            jQuery('#sidebar').css({
+            jQuery('#fixedscrollbox').css({
                 'position': 'fixed',
                 'top': '0',
                 'height': height

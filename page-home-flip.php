@@ -121,23 +121,26 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 		<?php wp_reset_query(); ?>
 
+<!-- TESTE DO FLIP PARA CHROME -->
 
-	<div id="left">
+	<div id="sidebarcontent">
 
-		<div id="sidebar">
+		<div id="fixedscrollbox">
 
-			Sidebar Content
-
+			Sidebar fixed content
 		</div>
+
+	</div>
+
+	<div id="right">
+
+		This is the text of the main part of the page.
 
 	</div>
 
 
 
-
-<!-- TESTE DO FLIP PARA CHROME -->
-
-<div id="f1_container">
+<!--  <div id="f1_container">
 <div id="f1_card" class="shadow">
   <div class="front face">
   </div>
@@ -151,7 +154,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 <p align="center"> Para visualizar o Demo de onde tiramos o código <a href="http://css3.bradshawenterprises.com/flip/" target="_blank">acesse aqui</a></p>
 
-<!-- FIM DO TESTE DO FLIP PARA CHROME -->
+FIM DO TESTE DO FLIP PARA CHROME -->
 
        
 		</div><!-- /#main-home -->
