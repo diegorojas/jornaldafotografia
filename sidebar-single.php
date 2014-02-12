@@ -93,7 +93,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 		<ul class="links-nav-post">
 			<a href="javascript:scroll_to('#header');"><li>Topo</li></a>
 			<a href="javascript:scroll_to('iframe');"><li>Vídeo</li></a>
-			<a href="javascript:scroll_to('.gallery');"><li>Galeria de Fotos</li></a>
+			<a href="javascript:scroll_to('#slider-single');"><li>Galeria de Fotos</li></a>
 			<a href="javascript:scroll_to('#post-author');"><li>Sobre o Autor</li></a>
 			<a href="javascript:scroll_to('#comments');"><li>Comentários</li></a>
 		</ul>
