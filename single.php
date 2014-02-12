@@ -81,10 +81,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
             </article><!-- .post -->
             
-            
+<div class="teste"></div>
+
+
 <div id="slider-single">
 
-    <div class="list_carousel">
+    <div class="anexos_carousel">
         <a class="prev" id="prev2" href="#"><span>anterior</span></a>
         <a class="next" id="next2" href="#"><span>seguinte</span></a>
         <ul id="foo2">
@@ -102,24 +104,15 @@ if ( ! defined( 'ABSPATH' ) ) exit;
             if ( $anexos ) {
                 foreach ( $anexos as $anexo ) { ?>
                 
-                <?php 
-                    $attachment_id = $anexo->ID;
-                    $image_attributes = wp_get_attachment_image_src( $attachment_id, 'full' );
-                    $attachment_page = get_attachment_link( $attachment_id ); 
-                    $description = $anexo->post_content;
-                    $url = wp_get_attachment_url( $attachment_id ); 
-                    ?>
-            <li>
-            <div class="cada-slide">                        
-            <?php
-            if ($description):
-            echo '<div id="desc-slide">' . $description . '</div>';
-            endif;
+			<?php 
+                $attachment_id = $anexo->ID;
+                $image_attributes = wp_get_attachment_image_src( $attachment_id, 'slider-single' );
+                $attachment_page = get_attachment_link( $attachment_id ); 
             ?>
-            <a href="<?php echo $url; ?>" class="thickbox image">
-            <img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" alt="<?php echo apply_filters('the_title', $anexo->post_title); ?>">
+            <li>
+            <a class="cada-slide-single" href="<?php echo wp_get_attachment_url( $attachment_id ); ?>" class="thickbox image">
+            	<img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" alt="<?php echo apply_filters('the_title', $anexo->post_title); ?>">
             </a>
-            </div>
             </li>
             <?php } } ?>
         </ul>
@@ -127,7 +120,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
         
         <div class="clearfix"></div>
         
-    </div>
+    </div><!-- .anexos_carousel -->
 
 </div><!-- #slider-single -->
 

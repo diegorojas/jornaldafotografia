@@ -4194,9 +4194,89 @@ img.ui-datepicker-trigger {
 
 }
 
+/* Slider na Single. class="anexos_carousel" */
+
+#foo2 {
+    margin: 0;
+    position: relative;
+}
+
+.anexos_carousel{
+    overflow: hidden;
+	width: 100%;
+	position: relative;
+	clear: left;
+}
+
+.anexos_carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.anexos_carousel li {
+    font-size: 14px;
+    color: #333;
+    width: auto;
+	height: auto;
+	overflow: hidden;
+    padding: 0;
+    margin: 0 1px 0 1px;
+    display: block;
+    float: left;
+	position: relative;
+}
+
+.anexos_carousel.responsive {
+    width: auto;
+    margin-left: 0;
+}
+
+
+.anexos_carousel .clearfix {
+
+    float: none;
+    clear: both;
+
+}
+
+.anexos_carousel a.prev {
+    background: url("images/setas-single.png") no-repeat scroll -5px center transparent;
+    display: block;
+    min-height: 70px;
+	position: absolute;
+    top: 40%;
+    width: 70px;
+	z-index: 50;
+}
+
+.anexos_carousel a.next {
+    background: url("images/setas-single.png") no-repeat scroll -75px center transparent;
+	display: block;
+	min-height: 70px;
+    position: absolute;
+    top: 40%;
+    width: 70px;
+	z-index: 50;
+	right: 0;
+}
+.anexos_carousel a.prev.disabled, a.next.disabled {
+    cursor: default;
+}
+.anexos_carousel a.prev span, a.next span {
+    display: none;
+}
+.cada-slide-single {
+	height: 500px;
+    overflow: hidden;
+	width: auto;
+}
+/* Fim do Slider da Single */
+
 .caroufredsel_wrapper {
 	width: 100% !important;
-	min-height: 270px;
+	min-height: 300px;
 	left: 0 !important;
 	right: 0 !important;
 }
@@ -4230,7 +4310,7 @@ ul#carousel li .content {
 	position: absolute;
 }
 ul#carousel li .content > div {
-	padding: 30px;
+	/*padding: 30px;*/
 }
 ul#carousel li .content p { margin-bottom: 0; }
 
@@ -4240,11 +4320,10 @@ ul#carousel li .content.center {
 }
 
 .cada-slide {
-	max-height: 300px;
+	height: 300px;
     overflow: hidden;
-	width: auto;vai querer noticias na home mesmo?
+	width: auto;
 }
-
 
 #carousel_wrap {
 	height: 300px;
@@ -4296,17 +4375,10 @@ body.single-projects #carousel_wrap { margin: 15px 0 30px }
 
 .carousel_nav {
 	/* background-color: rgba(255, 255, 255, 0.5); */
-	height: 700px;
+	height: 300px;
     position: absolute;
     top: 0;
     width: 50%;
-}
-
-
-#foo2 {
-    /*left: 20px;*/
-    margin: 0 2px;
-    position: relative;
 }
 
 #desc-slide {

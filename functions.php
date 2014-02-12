@@ -19,6 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	add_image_size( 'post-destak', 750, 500, TRUE );
     add_image_size( 'highlight', 665, 665 ); //665 pixels wide by 665 pixels maximum tall, soft crop mode
     add_image_size( 'highlight-cropped', 665, 300, TRUE ); //665 pixels wide by 665 pixels maximum tall, soft crop mode
+    add_image_size( 'slider-single', 700, 400, TRUE ); //665 pixels wide by 665 pixels maximum tall, soft crop mode
 
 
 function count_comments() {

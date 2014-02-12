@@ -37,10 +37,13 @@ jQuery('#foo2').carouFredSel({
 	prev: '#prev2',
 	next: '#next2',
 	auto: {
-		play: true,
+		play: false,
 	},
 	responsive: true,
 	direction: 'left',
+	width: 'null', // automatically calculated
+	height: 'null', // automatically calculated
+
 	items: {
 		visible: 1,
 	}
